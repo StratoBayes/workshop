@@ -1,0 +1,55 @@
+---
+title: "Organising Team"
+---
+
+::: team-member
+```{=html}
+<div class="organizer">
+    <img src="images/ke.jpg" alt="Organizer 1" class="organizer-photo">
+    <div class="organizer-info">
+        <h3>Kilian Eichenseer</h3>
+        <p><strong>Durham University</p>
+        <p></strong>Brief paragraph about Organizer 1's work, background, and contributions to the workshop.</p>
+    </div>
+</div>
+```
+:::
+
+::: team-member
+```{=html}
+<div class="organizer">
+    <img src="images/mrs.jfif" alt="Organizer 2" class="organizer-photo">
+    <div class="organizer-info">
+        <h3>Martin R. Smith</h3>
+        <p><strong>Durham University</p>
+        <p></strong>Brief paragraph about Organizer 2's work, background, and contributions to the workshop.</p>
+    </div>
+</div>
+```
+:::
+
+::: team-member
+```{=html}
+<div class="organizer">
+    <img src="images/ms.png" alt="Organizer 3" class="organizer-photo">
+    <div class="organizer-info">
+        <h3>Matthias Sinnesael</h3>
+        <p><strong>Trinity College Dublin</p>
+        <p></strong>Brief paragraph about Organizer 3's work, background, and contributions to the workshop.</p>
+    </div>
+</div>
+```
+:::
+
+::: team-member
+```{=html}
+<div class="organizer">
+    <img src="images/arm.png" alt="Organizer 4" class="organizer-photo">
+    <div class="organizer-info">
+        <h3>Andrew Millard</h3>
+        <p><strong>Durham University</p>
+        <p></strong>Brief paragraph about Organizer 4's work, background, and contributions to the workshop.</p>
+    </div>
+</div>
+```
+:::

@@ -1,0 +1,48 @@
+/* css styles */
+
+.table-schedule th:nth-child(1), .table-schedule td:nth-child(1) {
+    width: 25%; /* Adjust the percentage as needed */
+}
+
+.table-schedule th:nth-child(2), .table-schedule td:nth-child(2) {
+    width: 50%; /* Adjust the percentage as needed */
+}
+
+.table-schedule th:nth-child(3), .table-schedule td:nth-child(3) {
+    width: 25%; /* Adjust the percentage as needed */
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    border-radius: 50%; /* Circular images */
+    margin-right: 15px;
+    float: left;
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+.team-member p {
+    clear: both;
+}
+
+.organizer {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.organizer-photo {
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%; /* Optional: for round images */
+}
+
+.organizer-info {
+    flex-grow: 1;
+}

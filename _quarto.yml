@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "StratoBayes Workshop"
+  page-navigation: false
+  sidebar:
+    style: "docked"
+    search: true
+    logo: "images/logo-3.png"
+    contents:
+      - section: "Overview"
+        contents:
+          - index.qmd
+          - sign-up.qmd
+          - schedule.qmd
+          - organising-team.qmd
+      - section: "Logistics"
+        contents:
+          - getting-here.qmd
+          - food-and-drinks.qmd
+          - accomodation.qmd
+      - section: "Content"
+        contents:
+          - day1.qmd
+          - day2.qmd
+          - day3.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

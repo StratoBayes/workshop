@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "9bf205ee"
+  },
+  "about.qmd": {
+    "about.html": "f55b9b45"
+  },
+  "schedule.qmd": {
+    "schedule.html": "d19d6d9e"
+  },
+  "organising_team.qmd": {
+    "organising_team.html": "2e958b4b"
+  },
+  "organising-team.qmd": {
+    "organising-team.html": "817d3bdc"
+  },
+  "getting-here.qmd": {
+    "getting-here.html": "0d3ec746"
+  },
+  "sign-up.qmd": {
+    "sign-up.html": "6e6808cc"
+  },
+  "accomodation.qmd": {
+    "accomodation.html": "97995942"
+  },
+  "food-and-drinks.qmd": {
+    "food-and-drinks.html": "e678700e"
+  }
+}
