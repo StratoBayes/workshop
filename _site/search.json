@@ -18,7 +18,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Time\nActivity\nled by\n\n\n\n\n09:30-09:45\nWelcome\nTeam\n\n\n09:45-10:30\nIntroduction to R\n\n\n\n10:45-11:15\nCoffee Break\n\n\n\n11:15-12:30\nIntroduction to R\n\n\n\n12:30-13:30\nLunch Break\n\n\n\n13:30-15:00\nIntroduction to R\n\n\n\n15:00-15:30\nCoffee Break\n\n\n\n15:30-17:00\nIntroduction to R\n\n\n\n17:00-18:00\nIcebreaker\n\n\n\n18:00\nDinner at ?"
+    "text": "Time\nActivity\n\n\n\n\n09:30-09:45\nWelcome\n\n\n09:45-10:30\nIntroduction to R\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:30\nIntroduction to R\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:00\nIntroduction to R\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nIntroduction to R\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner"
   },
   {
     "objectID": "schedule.html#day-1",
@@ -116,7 +116,7 @@
     "href": "schedule.html#day-2-stratobayes-correlation-and-age-modelling-19th-march",
     "title": "Schedule",
     "section": "Day 2 – StratoBayes: Correlation and age modelling – 19th March",
-    "text": "Day 2 – StratoBayes: Correlation and age modelling – 19th March\n\n\n\n\n\n\n\n\nTime\nActivity\nled by\n\n\n\n\n09:00-09:15\nWelcome and introductions\nTeam\n\n\n09:15-10:00\nStratigraphic data and correlation\nMatthias Sinnesael\n\n\n10:00-10:45\nGetting started with the StratoBayes R package\nKilian Eichenseer\n\n\n10:45-11:15\nCoffee Break\n\n\n\n11:00-11:45\nBayesian age modelling\nAndrew Millard\n\n\n11:45-12:30\n\n\n\n\n12:30-13:30\nLunch Break\n\n\n\n14:00-15:30\n\n\n\n\n15:30-16:00\nCoffee Break\n\n\n\n16:00-17:30"
+    "text": "Day 2 – StratoBayes: Correlation and age modelling – 19th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:15\nWelcome and introductions\n\n\n09:15-09:45\nBackground on StratoBayes\n\n\n09:45-10:30\nStratigraphy, correlation and age modelling\n\n\n10:45-11:15\nCoffee Break\n\n\n11:00-11:45\nIntroduction to Bayesian statistics\n\n\n11:45-12:30\nThe StratoBayes R package – part 1\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:30\nThe StratoBayes R package – part 2\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:30\nThe StratoBayes R package – part 3"
   },
   {
     "objectID": "schedule.html#day-320th-march-delegate-project-work",
@@ -137,14 +137,14 @@
     "href": "schedule.html#day-3-delegate-project-work-20th-march",
     "title": "Schedule",
     "section": "Day 3 – Delegate project work – 20th March",
-    "text": "Day 3 – Delegate project work – 20th March\n\n\n\nTime\nActivity\n\n\n\n\n\n09:00-09:45\nParticipants introduce their projects\n\n\n\n09:45-10:30\nIndividual project work\n\n\n\n10:30-11:00\nCoffee break\n\n\n\n10:30-12:30\nIndividual project work\n\n\n\n12:30-13:30\nLunch Break\n\n\n\n13:30-13:45\nquick updates on progress\n\n\n\n13:45-15:00\nIndividual project work\n\n\n\n15:30-16:00\nCoffee Break\n\n\n\n16:00-16:30\nPreparing results\n\n\n\n16:30-17:30\nPresenting & discussing results"
+    "text": "Day 3 – Delegate project work – 20th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:45\nParticipants introduce their projects\n\n\n09:45-10:30\nIndividual project work\n\n\n10:30-11:00\nCoffee break\n\n\n10:30-12:30\nIndividual project work\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-13:45\nQuick updates on progress\n\n\n13:45-15:00\nIndividual project work\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-16:30\nFinalising individual project work\n\n\n16:30-17:30\nPresenting & discussing results"
   },
   {
     "objectID": "schedule.html#day-1-introduction-to-r-optional-18th-march",
     "href": "schedule.html#day-1-introduction-to-r-optional-18th-march",
     "title": "Schedule",
     "section": "",
-    "text": "Time\nActivity\nled by\n\n\n\n\n09:30-09:45\nWelcome\nTeam\n\n\n09:45-10:30\nIntroduction to R\n\n\n\n10:45-11:15\nCoffee Break\n\n\n\n11:15-12:30\nIntroduction to R\n\n\n\n12:30-13:30\nLunch Break\n\n\n\n13:30-15:00\nIntroduction to R\n\n\n\n15:00-15:30\nCoffee Break\n\n\n\n15:30-17:00\nIntroduction to R\n\n\n\n17:00-18:00\nIcebreaker\n\n\n\n18:00\nDinner at ?"
+    "text": "Time\nActivity\n\n\n\n\n09:30-09:45\nWelcome\n\n\n09:45-10:30\nIntroduction to R\n\n\n10:45-11:15\nCoffee Break\n\n\n11:15-12:30\nIntroduction to R\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:00\nIntroduction to R\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nIntroduction to R\n\n\n17:00-18:00\nIcebreaker\n\n\n18:00\nDinner at ?"
   },
   {
     "objectID": "organising_team.html",
@@ -215,5 +215,12 @@
     "title": "Accomodation",
     "section": "",
     "text": "Accomodation"
+  },
+  {
+    "objectID": "schedule.html#day-1-introduction-to-r-18th-march-optional",
+    "href": "schedule.html#day-1-introduction-to-r-18th-march-optional",
+    "title": "Schedule",
+    "section": "",
+    "text": "Time\nActivity\n\n\n\n\n09:30-09:45\nWelcome\n\n\n09:45-10:30\nIntroduction to R\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:30\nIntroduction to R\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:00\nIntroduction to R\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nIntroduction to R\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner"
   }
 ]

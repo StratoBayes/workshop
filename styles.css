@@ -1,16 +1,14 @@
 /* css styles */
 
 .table-schedule th:nth-child(1), .table-schedule td:nth-child(1) {
-    width: 25%; /* Adjust the percentage as needed */
+    width: 20%; /* Adjust the percentage as needed */
 }
 
 .table-schedule th:nth-child(2), .table-schedule td:nth-child(2) {
-    width: 50%; /* Adjust the percentage as needed */
+    width: 80%; /* Adjust the percentage as needed */
 }
 
-.table-schedule th:nth-child(3), .table-schedule td:nth-child(3) {
-    width: 25%; /* Adjust the percentage as needed */
-}
+
 
 .team-member {
     margin-bottom: 30px;
