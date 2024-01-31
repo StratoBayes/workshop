@@ -6,14 +6,15 @@ title: "Schedule"
 
 | Time        | Activity          |
 |-------------|-------------------|
-| 09:30-09:45 | Welcome           |
-| 09:45-10:30 | Introduction to R |
+| 09:00-09:30 | Introduction to R and RStudio |
+| 09:30-10:30 | Basic R concepts |
 | 10:30-11:00 | Coffee Break      |
-| 11:00-12:30 | Introduction to R |
+| 11:00-12:00 | Data Import and manipulation |
+| 12:00-12:30 | Data visualisation |
 | 12:30-13:30 | Lunch Break       |
-| 13:30-15:00 | Introduction to R |
+| 13:30-15:00 | Writing functions |
 | 15:00-15:30 | Coffee Break      |
-| 15:30-17:00 | Introduction to R |
+| 15:30-17:00 | Dealing with stratigraphic data in R |
 | 17:00-18:30 | Icebreaker        |
 | 19:00       | Dinner            |
 

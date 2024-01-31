@@ -20,11 +20,12 @@ website:
           - getting-here.qmd
           - food-and-drinks.qmd
           - accomodation.qmd
-      - section: "Content"
-        contents:
-          - day1.qmd
-          - day2.qmd
-          - day3.qmd
+      - leisure.qmd
+      # - section: "Content"
+        # contents:
+        #   - day1.qmd
+        #   - day2.qmd
+        #   - day3.qmd
 
 
 format:

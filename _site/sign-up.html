@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -151,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./food-and-drinks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lunch</span></a>
+ <span class="menu-text">Catering</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -162,26 +196,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Content</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
- <span class="menu-text">day1.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">day2.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">day3.qmd</span>
-  </li>
-      </ul>
-  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./leisure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leisure</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -204,6 +224,32 @@ ul.task-list li input[type="checkbox"] {
 <section id="sign-up" class="level1">
 <h1>Sign-up</h1>
 <p>Please sign up using the following form:</p>
+<p>The minimal fee per participant is</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>menu_2 <span class="ot">&lt;-</span> <span class="dv">13</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>menu_1 <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>packed_lunch <span class="ot">&lt;-</span> <span class="fl">6.5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>unpacked_lunch <span class="ot">&lt;-</span> <span class="fl">7.5</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>coffee_break <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>participants <span class="ot">&lt;-</span> <span class="dv">6</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>instructors <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>people <span class="ot">&lt;-</span> instructors <span class="sc">+</span> participants</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>delivery <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>cost1 <span class="ot">&lt;-</span> <span class="dv">9</span><span class="sc">*</span>delivery <span class="sc">+</span> <span class="dv">6</span><span class="sc">*</span>coffee_break<span class="sc">*</span>people <span class="sc">+</span>  <span class="dv">3</span><span class="sc">*</span>menu_2<span class="sc">*</span>people</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>cost2 <span class="ot">&lt;-</span> <span class="dv">9</span><span class="sc">*</span>delivery <span class="sc">+</span> <span class="dv">6</span><span class="sc">*</span>coffee_break<span class="sc">*</span>people <span class="sc">+</span>  <span class="dv">3</span><span class="sc">*</span>unpacked_lunch<span class="sc">*</span>people</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>cost3 <span class="ot">&lt;-</span> <span class="dv">9</span><span class="sc">*</span>delivery <span class="sc">+</span> <span class="dv">6</span><span class="sc">*</span>coffee_break<span class="sc">*</span>people <span class="sc">+</span>  <span class="dv">3</span><span class="sc">*</span>packed_lunch<span class="sc">*</span>people</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>cost4 <span class="ot">&lt;-</span> <span class="dv">9</span><span class="sc">*</span>delivery <span class="sc">+</span> <span class="dv">6</span><span class="sc">*</span>coffee_break<span class="sc">*</span>people <span class="sc">+</span>  <span class="dv">3</span><span class="sc">*</span>menu_1<span class="sc">*</span>people</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(participants,cost1<span class="sc">/</span>participants, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">45</span>,<span class="dv">105</span>))</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(participants,cost2<span class="sc">/</span>participants, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">col =</span> <span class="st">"dodgerblue"</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(participants,cost3<span class="sc">/</span>participants, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">col =</span> <span class="st">"blue"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(participants,cost4<span class="sc">/</span>participants, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">col =</span> <span class="st">"grey60"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"Menu 2"</span>, <span class="st">"Menu 1"</span>, <span class="st">"Unpacked"</span>, <span class="st">"Packed"</span>), <span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"black"</span>, <span class="st">"grey60"</span>, <span class="st">"blue"</span>, <span class="st">"dodgerblue"</span>))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="fu">c</span>(<span class="dv">60</span>,<span class="dv">70</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="sign-up_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 
 
 </section>
