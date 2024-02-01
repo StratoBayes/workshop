@@ -4,35 +4,35 @@ title: "Schedule"
 
 ## Day 1 -- Introduction to R -- [18<sup>th</sup> March]{style="font-size: 100%;"} (optional)
 
-| Time        | Activity          |
-|-------------|-------------------|
-| 09:00-09:30 | Introduction to R and RStudio |
-| 09:30-10:30 | Basic R concepts |
-| 10:30-11:00 | Coffee Break      |
-| 11:00-12:00 | Data Import and manipulation |
-| 12:00-12:30 | Data visualisation |
-| 12:30-13:30 | Lunch Break       |
-| 13:30-14:30 | Writing functions |
+| Time        | Activity                             |
+|-------------|--------------------------------------|
+| 09:00-09:30 | Introduction to R and RStudio        |
+| 09:30-10:30 | Basic R concepts                     |
+| 10:30-11:00 | Coffee Break                         |
+| 11:00-12:00 | Data Import and manipulation         |
+| 12:00-12:30 | Data visualisation                   |
+| 12:30-13:30 | Lunch Break                          |
+| 13:30-14:30 | Writing functions                    |
 | 14:30-15:00 | Dealing with stratigraphic data in R |
-| 15:00-15:30 | Coffee Break      |
-| 15:30-17:00 | Monte Carlo simulations and MCMC in R |
-| 17:00-18:30 | Icebreaker        |
-| 19:00       | Dinner            |
+| 15:00-15:30 | Coffee Break                         |
+| 15:30-17:00 | Bayesian algorithms in R             |
+| 17:00-18:30 | Icebreaker                           |
+| 19:00       | Dinner                               |
 
 ## Day 2 -- StratoBayes: Correlation and age modelling -- [19<sup>th</sup> March]{style="font-size: 100%;"}
 
-| Time        | Activity                                       |
-|-------------|------------------------------------------------|
-| 09:00-09:15 | Welcome and introductions                      |
-| 09:15-09:45 | Background on StratoBayes                      |
-| 09:45-10:30 | Stratigraphy, correlation and age modelling    |
-| 10:45-11:15 | Coffee Break                                   |
-| 11:00-11:45 | Introduction to Bayesian statistics            |
-| 11:45-12:30 | The StratoBayes R package -- part 1        |
-| 12:30-13:30 | Lunch Break                                    |
-| 13:30-15:30 | The StratoBayes R package -- part 2            |
-| 15:00-15:30 | Coffee Break                                   |
-| 15:30-17:30 | The StratoBayes R package -- part 3            |
+| Time        | Activity                                    |
+|-------------|---------------------------------------------|
+| 09:00-09:15 | Welcome and introductions                   |
+| 09:15-09:45 | Background on StratoBayes                   |
+| 09:45-10:30 | Stratigraphy, correlation and age modelling |
+| 10:45-11:15 | Coffee Break                                |
+| 11:00-11:45 | Introduction to Bayesian statistics         |
+| 11:45-12:30 | The StratoBayes R package -- part 1         |
+| 12:30-13:30 | Lunch Break                                 |
+| 13:30-15:30 | The StratoBayes R package -- part 2         |
+| 15:00-15:30 | Coffee Break                                |
+| 15:30-17:30 | The StratoBayes R package -- part 3         |
 
 ## Day 3 -- Delegate project work -- [20<sup>th</sup> March]{style="font-size: 100%;"}
 

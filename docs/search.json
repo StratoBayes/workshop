@@ -4,62 +4,152 @@
     "href": "sign-up.html",
     "title": "Sign-up",
     "section": "",
-    "text": "Sign-up\nPlease sign up using the following form:\nThe minimal fee per participant is\n\nmenu_2 &lt;- 13\nmenu_1 &lt;- 10\npacked_lunch &lt;- 6.5\nunpacked_lunch &lt;- 7.5\ncoffee_break &lt;- 3\nparticipants &lt;- 6:20\ninstructors &lt;- 4\npeople &lt;- instructors + participants\ndelivery &lt;- 5\ncost1 &lt;- 9*delivery + 6*coffee_break*people +  3*menu_2*people\ncost2 &lt;- 9*delivery + 6*coffee_break*people +  3*unpacked_lunch*people\ncost3 &lt;- 9*delivery + 6*coffee_break*people +  3*packed_lunch*people\ncost4 &lt;- 9*delivery + 6*coffee_break*people +  3*menu_1*people\n\nplot(participants,cost1/participants, type = \"o\", ylim = c(45,105))\npoints(participants,cost2/participants, type = \"o\", col = \"dodgerblue\")\npoints(participants,cost3/participants, type = \"o\", col = \"blue\")\npoints(participants,cost4/participants, type = \"o\", col = \"grey60\")\nlegend(\"topright\", legend = c(\"Menu 2\", \"Menu 1\", \"Unpacked\", \"Packed\"), fill= c(\"black\", \"grey60\", \"blue\", \"dodgerblue\"))\nabline(h=c(60,70))"
+    "text": "Sign-up\nPlease sign up using the following form: StratoBayes workshop registration\nThe workshop fee is £? for all three days, and £? for the day two and three only (both include the icebreaker at 5pm on day 1)\nPlease transfer the fee to the following account:\nWe will email you a confirmation once we have received it.",
+    "crumbs": [
+      "Overview",
+      "Sign-up"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "StratoBayes workshop",
     "section": "",
-    "text": "18th – 20th March 2024, Durham, UK"
+    "text": "18th – 20th March 2024, Durham, UK",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
     "title": "StratoBayes workshop",
     "section": "About",
-    "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data."
+    "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#requirements",
     "href": "index.html#requirements",
     "title": "StratoBayes workshop",
     "section": "Requirements",
-    "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own."
+    "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#installation",
     "href": "index.html#installation",
     "title": "StratoBayes workshop",
     "section": "Installation",
-    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptop."
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptop.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "leisure.html",
     "href": "leisure.html",
     "title": "Leisure",
     "section": "",
-    "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes."
+    "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes.",
+    "crumbs": [
+      "Leisure"
+    ]
   },
   {
     "objectID": "food-and-drinks.html",
     "href": "food-and-drinks.html",
     "title": "Catering",
     "section": "",
-    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break."
+    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break.",
+    "crumbs": [
+      "Logistics",
+      "Catering"
+    ]
   },
   {
     "objectID": "accomodation.html",
     "href": "accomodation.html",
     "title": "Accomodation",
     "section": "",
-    "text": "Accomodation"
+    "text": "Accomodation",
+    "crumbs": [
+      "Logistics",
+      "Accomodation"
+    ]
   },
   {
     "objectID": "getting-here.html",
     "href": "getting-here.html",
     "title": "Getting here",
     "section": "",
-    "text": "Getting here\nThe workshop takes place in Durham, in walking distance from the train station.\nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University."
+    "text": "Getting here\nThe workshop takes place in Durham, in walking distance from the train station.\nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University.",
+    "crumbs": [
+      "Logistics",
+      "Getting here"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Time\nActivity\n\n\n\n\n09:00-09:30\nIntroduction to R and RStudio\n\n\n09:30-10:30\nBasic R concepts\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:00\nData Import and manipulation\n\n\n12:00-12:30\nData visualisation\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-14:30\nWriting functions\n\n\n14:30-15:00\nDealing with stratigraphic data in R\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nBayesian algorithms in R\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner",
+    "crumbs": [
+      "Overview",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#day-1-introduction-to-r-18th-march-optional",
+    "href": "schedule.html#day-1-introduction-to-r-18th-march-optional",
+    "title": "Schedule",
+    "section": "",
+    "text": "Time\nActivity\n\n\n\n\n09:00-09:30\nIntroduction to R and RStudio\n\n\n09:30-10:30\nBasic R concepts\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:00\nData Import and manipulation\n\n\n12:00-12:30\nData visualisation\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-14:30\nWriting functions\n\n\n14:30-15:00\nDealing with stratigraphic data in R\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nBayesian algorithms in R\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner",
+    "crumbs": [
+      "Overview",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#day-2-stratobayes-correlation-and-age-modelling-19th-march",
+    "href": "schedule.html#day-2-stratobayes-correlation-and-age-modelling-19th-march",
+    "title": "Schedule",
+    "section": "Day 2 – StratoBayes: Correlation and age modelling – 19th March",
+    "text": "Day 2 – StratoBayes: Correlation and age modelling – 19th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:15\nWelcome and introductions\n\n\n09:15-09:45\nBackground on StratoBayes\n\n\n09:45-10:30\nStratigraphy, correlation and age modelling\n\n\n10:45-11:15\nCoffee Break\n\n\n11:00-11:45\nIntroduction to Bayesian statistics\n\n\n11:45-12:30\nThe StratoBayes R package – part 1\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:30\nThe StratoBayes R package – part 2\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:30\nThe StratoBayes R package – part 3",
+    "crumbs": [
+      "Overview",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#day-3-delegate-project-work-20th-march",
+    "href": "schedule.html#day-3-delegate-project-work-20th-march",
+    "title": "Schedule",
+    "section": "Day 3 – Delegate project work – 20th March",
+    "text": "Day 3 – Delegate project work – 20th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:45\nParticipants introduce their projects\n\n\n09:45-10:30\nIndividual project work\n\n\n10:30-11:00\nCoffee break\n\n\n10:30-12:30\nIndividual project work\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-13:45\nQuick updates on progress\n\n\n13:45-15:00\nIndividual project work\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-16:30\nFinalising individual project work\n\n\n16:30-17:30\nPresenting & discussing results",
+    "crumbs": [
+      "Overview",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "organising-team.html",
+    "href": "organising-team.html",
+    "title": "Organising Team",
+    "section": "",
+    "text": "This workshop is an outcome of the Leverhulme grant A fizzle or a bang: how fast was the Cambrian ‘explosion’?, awarded to Martin Smith.\n\n\n\n  \n    \n    \n    \n        Kilian Eichenseer\n        Durham University\n    \n\n\n\n  \n    \n    \n    \n        Martin R. Smith\n        Durham University\n        \n    \n\n\n\n\n\n\n  \n    \n    \n    \n        Matthias Sinnesael\n        Trinity College Dublin\n    \n\n\n\n  \n    \n    \n    \n        Andrew Millard\n        Durham University",
+    "crumbs": [
+      "Overview",
+      "Organising Team"
+    ]
   }
 ]

@@ -1,28 +1,9 @@
 # Sign-up
 
-Please sign up using the following form:
+Please sign up using the following form: [StratoBayes workshop registration](https://docs.google.com/forms/d/e/1FAIpQLSdWItzkHWuQeai-I6QGSJ2huJTuRuhE5zmxF4BX9n2Cahjsig/viewform )
 
-The minimal fee per participant is
+The workshop fee is £? for all three days, and £? for the day two and three only (both include the icebreaker at 5pm on day 1)
 
-```{r}
-menu_2 <- 13
-menu_1 <- 10
-packed_lunch <- 6.5
-unpacked_lunch <- 7.5
-coffee_break <- 3
-participants <- 6:20
-instructors <- 4
-people <- instructors + participants
-delivery <- 5
-cost1 <- 9*delivery + 6*coffee_break*people +  3*menu_2*people
-cost2 <- 9*delivery + 6*coffee_break*people +  3*unpacked_lunch*people
-cost3 <- 9*delivery + 6*coffee_break*people +  3*packed_lunch*people
-cost4 <- 9*delivery + 6*coffee_break*people +  3*menu_1*people
+Please transfer the fee to the following account:
 
-plot(participants,cost1/participants, type = "o", ylim = c(45,105))
-points(participants,cost2/participants, type = "o", col = "dodgerblue")
-points(participants,cost3/participants, type = "o", col = "blue")
-points(participants,cost4/participants, type = "o", col = "grey60")
-legend("topright", legend = c("Menu 2", "Menu 1", "Unpacked", "Packed"), fill= c("black", "grey60", "blue", "dodgerblue"))
-abline(h=c(60,70))
-```
+We will email you a confirmation once we have received it. 
