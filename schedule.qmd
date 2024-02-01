@@ -12,9 +12,10 @@ title: "Schedule"
 | 11:00-12:00 | Data Import and manipulation |
 | 12:00-12:30 | Data visualisation |
 | 12:30-13:30 | Lunch Break       |
-| 13:30-15:00 | Writing functions |
+| 13:30-14:30 | Writing functions |
+| 14:30-15:00 | Dealing with stratigraphic data in R |
 | 15:00-15:30 | Coffee Break      |
-| 15:30-17:00 | Dealing with stratigraphic data in R |
+| 15:30-17:00 | Monte Carlo simulations and MCMC in R |
 | 17:00-18:30 | Icebreaker        |
 | 19:00       | Dinner            |
 

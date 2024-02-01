@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "sign-up.html",
+    "href": "sign-up.html",
+    "title": "Sign-up",
+    "section": "",
+    "text": "Sign-up\nPlease sign up using the following form:\nThe minimal fee per participant is\n\nmenu_2 &lt;- 13\nmenu_1 &lt;- 10\npacked_lunch &lt;- 6.5\nunpacked_lunch &lt;- 7.5\ncoffee_break &lt;- 3\nparticipants &lt;- 6:20\ninstructors &lt;- 4\npeople &lt;- instructors + participants\ndelivery &lt;- 5\ncost1 &lt;- 9*delivery + 6*coffee_break*people +  3*menu_2*people\ncost2 &lt;- 9*delivery + 6*coffee_break*people +  3*unpacked_lunch*people\ncost3 &lt;- 9*delivery + 6*coffee_break*people +  3*packed_lunch*people\ncost4 &lt;- 9*delivery + 6*coffee_break*people +  3*menu_1*people\n\nplot(participants,cost1/participants, type = \"o\", ylim = c(45,105))\npoints(participants,cost2/participants, type = \"o\", col = \"dodgerblue\")\npoints(participants,cost3/participants, type = \"o\", col = \"blue\")\npoints(participants,cost4/participants, type = \"o\", col = \"grey60\")\nlegend(\"topright\", legend = c(\"Menu 2\", \"Menu 1\", \"Unpacked\", \"Packed\"), fill= c(\"black\", \"grey60\", \"blue\", \"dodgerblue\"))\nabline(h=c(60,70))"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "StratoBayes workshop",
+    "section": "",
+    "text": "18th – 20th March 2024, Durham, UK"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "StratoBayes workshop",
+    "section": "About",
+    "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data."
+  },
+  {
+    "objectID": "index.html#requirements",
+    "href": "index.html#requirements",
+    "title": "StratoBayes workshop",
+    "section": "Requirements",
+    "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own."
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "StratoBayes workshop",
+    "section": "Installation",
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptop."
+  },
+  {
+    "objectID": "leisure.html",
+    "href": "leisure.html",
+    "title": "Leisure",
+    "section": "",
+    "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes."
+  },
+  {
+    "objectID": "food-and-drinks.html",
+    "href": "food-and-drinks.html",
+    "title": "Catering",
+    "section": "",
+    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break."
+  },
+  {
+    "objectID": "accomodation.html",
+    "href": "accomodation.html",
+    "title": "Accomodation",
+    "section": "",
+    "text": "Accomodation"
+  },
+  {
+    "objectID": "getting-here.html",
+    "href": "getting-here.html",
+    "title": "Getting here",
+    "section": "",
+    "text": "Getting here\nThe workshop takes place in Durham, in walking distance from the train station.\nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University."
+  }
+]

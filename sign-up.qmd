@@ -23,6 +23,6 @@ plot(participants,cost1/participants, type = "o", ylim = c(45,105))
 points(participants,cost2/participants, type = "o", col = "dodgerblue")
 points(participants,cost3/participants, type = "o", col = "blue")
 points(participants,cost4/participants, type = "o", col = "grey60")
-legend("topright", legend = c("Menu 2", "Menu 1", "Unpacked", "Packed"), fill = c("black", "grey60", "blue", "dodgerblue"))
+legend("topright", legend = c("Menu 2", "Menu 1", "Unpacked", "Packed"), fill= c("black", "grey60", "blue", "dodgerblue"))
 abline(h=c(60,70))
 ```
