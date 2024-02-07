@@ -14,4 +14,4 @@ This event is open to anyone with an interest in stratigraphic correlation or ag
 
 ## Installation
 
-[R](https://www.r-project.org/) and [Rstudio](https://posit.co/downloads/) need to be installed on the participants' laptop.
+[R](https://www.r-project.org/) and [Rstudio](https://posit.co/downloads/) need to be installed on the participants' laptops.

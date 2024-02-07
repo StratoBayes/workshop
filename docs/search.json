@@ -4,7 +4,7 @@
     "href": "sign-up.html",
     "title": "Sign-up",
     "section": "",
-    "text": "Sign-up\nPlease register your interest using the following form: StratoBayes workshop registration\nThe workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).\nEarly bird registration fees (by 25th February) are £100 (three days) or £80 (two days).\nPayment details will be made available shortly.\nWe will email you a confirmation once we have received your registration."
+    "text": "Sign-up\nPlease register your interest using the following form: StratoBayes workshop registration\nThe workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).\nEarly bird registration fees (by 25th February) are £100 (three days) or £80 (two days).\nWe will email you a confirmation once we have received your registration.\nThis email will request your institutional or personal address and other necessary details. These will be used by the Durham University Earth Sciences finance office to issue an invoice, enabling you to proceed with the payment."
   },
   {
     "objectID": "index.html",
@@ -32,7 +32,7 @@
     "href": "index.html#installation",
     "title": "StratoBayes workshop",
     "section": "Installation",
-    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptop."
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops."
   },
   {
     "objectID": "leisure.html",
@@ -64,7 +64,7 @@
     "href": "getting-here.html",
     "title": "Getting here",
     "section": "",
-    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, at a 20 minutes walking distance from the train station. Sessions will be held in Tristram room at the St. John’s college: \nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University."
+    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, at a 20 minutes walking distance from the train station. Sessions will be held in Tristram room at St. John’s college: \nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University."
   },
   {
     "objectID": "schedule.html",
