@@ -20,7 +20,8 @@ website:
         contents:
           - getting-here.qmd
           - food-and-drinks.qmd
-          - leisure.qmd
+          - accommodation.qmd
+      - leisure.qmd
       # - section: "Content"
         # contents:
         #   - day1.qmd

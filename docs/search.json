@@ -4,49 +4,76 @@
     "href": "sign-up.html",
     "title": "Sign-up",
     "section": "",
-    "text": "Sign-up\nPlease register your interest using the following form: StratoBayes workshop registration\nThe workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).\nEarly bird registration fees (by 25th February) are £100 (three days) or £80 (two days).\nWe will email you a confirmation once we have received your registration.\nThis email will request your institutional or personal address and other necessary details. These will be used by the Durham University Earth Sciences finance office to issue an invoice, enabling you to proceed with the payment."
+    "text": "Sign-up\nPlease register your interest using the following form: StratoBayes workshop registration\nThe workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).\nEarly bird registration fees (by 25th February) are £100 (three days) or £80 (two days).\nWe will email you a confirmation once we have received your registration.\nThis email will request your institutional or personal address and other necessary details. These will be used by the Durham University Earth Sciences finance office to issue an invoice, enabling you to proceed with the payment.",
+    "crumbs": [
+      "Overview",
+      "Sign-up"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "StratoBayes workshop",
     "section": "",
-    "text": "18th – 20th March 2024, Durham, UK"
+    "text": "18th – 20th March 2024, Durham, UK",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
     "title": "StratoBayes workshop",
     "section": "About",
-    "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data."
+    "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#requirements",
     "href": "index.html#requirements",
     "title": "StratoBayes workshop",
     "section": "Requirements",
-    "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own."
+    "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "index.html#installation",
     "href": "index.html#installation",
     "title": "StratoBayes workshop",
     "section": "Installation",
-    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops."
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.",
+    "crumbs": [
+      "Overview",
+      "StratoBayes workshop"
+    ]
   },
   {
     "objectID": "leisure.html",
     "href": "leisure.html",
     "title": "Leisure",
     "section": "",
-    "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes."
+    "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes.",
+    "crumbs": [
+      "Leisure"
+    ]
   },
   {
     "objectID": "food-and-drinks.html",
     "href": "food-and-drinks.html",
     "title": "Catering",
     "section": "",
-    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break.\nThe Icebreaker at 5pm on 18th March at St. John’s college is included for all participants."
+    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break.\nThe Icebreaker at 5pm on 18th March at St. John’s college is included for all participants.",
+    "crumbs": [
+      "Logistics",
+      "Catering"
+    ]
   },
   {
     "objectID": "accomodation.html",
@@ -64,7 +91,11 @@
     "href": "getting-here.html",
     "title": "Getting here",
     "section": "",
-    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, at a 20 minutes walking distance from the train station. Sessions will be held in Tristram room at St. John’s college: \nDurham can be reached by train in three hours from London, two hours from Manchester, and less than two hours from Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University."
+    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, 20 minutes’ walk from the train station. Sessions will be held in the Tristram Room at St. John’s college: \nDurham can be reached by train in three hours from London, and two hours from Manchester or Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University.",
+    "crumbs": [
+      "Logistics",
+      "Getting here"
+    ]
   },
   {
     "objectID": "schedule.html",
@@ -106,6 +137,10 @@
     "href": "accommodation.html",
     "title": "Accommodation",
     "section": "",
-    "text": "Accommodation"
+    "text": "Accommodation\nThe closest accommodation can be found at St Chad’s college, a 3-minute walk from the workshop site. Single en-suite rooms are £69.50 per night, single rooms with access to a shared are £57 per night. Please contact St Chad’s college at +44 191 334 3358 or chads@durham.ac.uk for room booking. Rooms are available from 17th March.\nNearby hotels include the Travelodge, Premier Inn and Delta Hotels Durham Royal County.",
+    "crumbs": [
+      "Logistics",
+      "Accommodation"
+    ]
   }
 ]
