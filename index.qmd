@@ -15,3 +15,12 @@ This event is open to anyone with an interest in stratigraphic correlation or ag
 ## Installation
 
 [R](https://www.r-project.org/) and [Rstudio](https://posit.co/downloads/) need to be installed on the participants' laptops.
+
+It would be helpful to install necessary packages by typing the following command into the R console:
+
+``` r
+install.packages(c(
+  "cli", "coda", "doParallel", "EnvStats", "fda", "foreach",
+  "dbscan", "mcmcse", "msm", "mvnfast", "protoclust", "Rcpp",
+  "Rdpack", "Rfast"))
+```
