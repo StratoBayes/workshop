@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -197,9 +197,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#session-1---introduction-to-r-and-rstudio" id="toc-session-1---introduction-to-r-and-rstudio" class="nav-link active" data-scroll-target="#session-1---introduction-to-r-and-rstudio">Session 1 - Introduction to R and RStudio</a></li>
-  <li><a href="#session-2" id="toc-session-2" class="nav-link" data-scroll-target="#session-2">Session 2</a></li>
-  <li><a href="#session-3" id="toc-session-3" class="nav-link" data-scroll-target="#session-3">Session 3</a></li>
-  <li><a href="#session-4" id="toc-session-4" class="nav-link" data-scroll-target="#session-4">Session 4</a></li>
+  <li><a href="#session-2---handling-data-import-and-manipulation" id="toc-session-2---handling-data-import-and-manipulation" class="nav-link" data-scroll-target="#session-2---handling-data-import-and-manipulation">Session 2 - Handling data: import and manipulation</a></li>
+  <li><a href="#session-3---visualising-and-describing-data" id="toc-session-3---visualising-and-describing-data" class="nav-link" data-scroll-target="#session-3---visualising-and-describing-data">Session 3 - Visualising and describing data</a></li>
+  <li><a href="#session-4---writing-functions-in-r" id="toc-session-4---writing-functions-in-r" class="nav-link" data-scroll-target="#session-4---writing-functions-in-r">Session 4 - Writing functions in R</a></li>
   <li><a href="#data-and-r-scripts" id="toc-data-and-r-scripts" class="nav-link" data-scroll-target="#data-and-r-scripts">Data and R scripts</a></li>
   </ul>
 </nav>
@@ -226,21 +226,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The files are hosted on the StratoBayes workshop Github repository. Download them by following any of the links below, click on the three dots (<code>...</code>) in the top right corner, and select <code>Download</code>.</p>
+<p>The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, click on the three dots (<code>...</code>) in the top right corner, and select <code>Download</code>.</p>
 <section id="session-1---introduction-to-r-and-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="session-1---introduction-to-r-and-rstudio">Session 1 - Introduction to R and RStudio</h2>
 <p><a href="https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%201%20Introduction%20to%20R%20and%20RStudio.docx">Worksheet for Session 1</a></p>
 </section>
-<section id="session-2" class="level2">
-<h2 class="anchored" data-anchor-id="session-2">Session 2</h2>
+<section id="session-2---handling-data-import-and-manipulation" class="level2">
+<h2 class="anchored" data-anchor-id="session-2---handling-data-import-and-manipulation">Session 2 - Handling data: import and manipulation</h2>
 <p><a href="https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%202%20Handling%20data.docx">Worksheet for Session 2</a></p>
 </section>
-<section id="session-3" class="level2">
-<h2 class="anchored" data-anchor-id="session-3">Session 3</h2>
+<section id="session-3---visualising-and-describing-data" class="level2">
+<h2 class="anchored" data-anchor-id="session-3---visualising-and-describing-data">Session 3 - Visualising and describing data</h2>
 <p><a href="https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%203%20Visualising%20and%20describing%20data.docx">Worksheet for Session 3</a></p>
 </section>
-<section id="session-4" class="level2">
-<h2 class="anchored" data-anchor-id="session-4">Session 4</h2>
+<section id="session-4---writing-functions-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="session-4---writing-functions-in-r">Session 4 - Writing functions in R</h2>
 <p><a href="https://github.com/StratoBayes/StratoBayes.github.io/tree/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session-4-Functions">Worksheet for Session 4</a> The worksheet is the file Session 4 Functions.html.</p>
 </section>
 <section id="data-and-r-scripts" class="level2">
@@ -330,24 +330,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -382,11 +364,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
