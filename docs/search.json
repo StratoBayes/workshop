@@ -4,10 +4,105 @@
     "href": "sign-up.html",
     "title": "Sign-up",
     "section": "",
-    "text": "Sign-up\nPlease register your interest using the following form: StratoBayes workshop registration\nThe workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).\nEarly bird registration fees (by 25th February) are £100 (three days) or £80 (two days).\nWe will email you a confirmation once we have received your registration.\nThis email will request your institutional or personal address and other necessary details. These will be used by the Durham University Earth Sciences finance office to issue an invoice, enabling you to proceed with the payment.",
+    "text": "Sign-up\nSign-up for the workshop has now closed.\n\nWe have emailed payment details and confirmation messages to all registered participants.\nIn preparation for the workshop, it would be helpful to install a recent version of R (https://www.r-project.org/) and Rstudio (RStudio Desktop - Posit). Typing the following command into the R console will install the packages necessary to run StratoBayes on day 2:\ninstall.packages(c(\"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\",\n                   \"foreach\", \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\",\n                   \"protoclust\", \"Rcpp\", \"Rdpack\", \"Rfast\"))",
     "crumbs": [
       "Overview",
       "Sign-up"
+    ]
+  },
+  {
+    "objectID": "organising-team.html",
+    "href": "organising-team.html",
+    "title": "Organising Team",
+    "section": "",
+    "text": "This workshop is an outcome of the Leverhulme grant A fizzle or a bang: how fast was the Cambrian ‘explosion’?, awarded to Martin Smith.\n\n\n\n  \n    \n    \n    \n        Kilian Eichenseer\n        Durham University\n    \n\n\n\n  \n    \n    \n    \n        Martin Smith\n        Durham University\n        \n    \n\n\n\n\n\n\n  \n    \n    \n    \n        Matthias Sinnesael\n        Trinity College Dublin\n    \n\n\n\n  \n    \n    \n    \n        Andrew Millard\n        Durham University",
+    "crumbs": [
+      "Overview",
+      "Organising Team"
+    ]
+  },
+  {
+    "objectID": "introduction-to-R.html",
+    "href": "introduction-to-R.html",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "Worksheet for Session 1",
+    "crumbs": [
+      "Workshop material",
+      "Introduction to R"
+    ]
+  },
+  {
+    "objectID": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
+    "href": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "Worksheet for Session 1",
+    "crumbs": [
+      "Workshop material",
+      "Introduction to R"
+    ]
+  },
+  {
+    "objectID": "introduction-to-R.html#session-2",
+    "href": "introduction-to-R.html#session-2",
+    "title": "Introduction to R",
+    "section": "Session 2",
+    "text": "Session 2",
+    "crumbs": [
+      "Workshop material",
+      "Introduction to R"
+    ]
+  },
+  {
+    "objectID": "introduction-to-R.html#session-3",
+    "href": "introduction-to-R.html#session-3",
+    "title": "Introduction to R",
+    "section": "Session 3",
+    "text": "Session 3",
+    "crumbs": [
+      "Workshop material",
+      "Introduction to R"
+    ]
+  },
+  {
+    "objectID": "introduction-to-R.html#session-4",
+    "href": "introduction-to-R.html#session-4",
+    "title": "Introduction to R",
+    "section": "Session 4",
+    "text": "Session 4",
+    "crumbs": [
+      "Workshop material",
+      "Introduction to R"
+    ]
+  },
+  {
+    "objectID": "getting-here.html",
+    "href": "getting-here.html",
+    "title": "Getting here",
+    "section": "",
+    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, 20 minutes’ walk from the train station. Sessions will be held in the Tristram Room at St. John’s college: \nDurham can be reached by train in three hours from London, and two hours from Manchester or Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University.",
+    "crumbs": [
+      "Logistics",
+      "Getting here"
+    ]
+  },
+  {
+    "objectID": "accommodation.html",
+    "href": "accommodation.html",
+    "title": "Accommodation",
+    "section": "",
+    "text": "Accommodation\nThe closest accommodation can be found at St Chad’s college, a 3-minute walk from the workshop site. Single en-suite rooms are £69.50 per night, single rooms with access to a shared are £57 per night. Please contact St Chad’s college at +44 191 334 3358 or chads@durham.ac.uk for room booking. Rooms are available from 17th March.\nNearby hotels include the Travelodge, Premier Inn and Delta Hotels Durham Royal County."
+  },
+  {
+    "objectID": "food-and-drinks.html",
+    "href": "food-and-drinks.html",
+    "title": "Catering",
+    "section": "",
+    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break.\nThe Icebreaker at 5pm on 18th March at St. John’s college is included for all participants.",
+    "crumbs": [
+      "Logistics",
+      "Catering"
     ]
   },
   {
@@ -48,7 +143,7 @@
     "href": "index.html#installation",
     "title": "StratoBayes workshop",
     "section": "Installation",
-    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.",
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.\nIt would be helpful to install necessary packages by typing the following command into the R console:\ninstall.packages(c(\n  \"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\", \"foreach\",\n  \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\", \"protoclust\", \"Rcpp\",\n  \"Rdpack\", \"Rfast\"))",
     "crumbs": [
       "Overview",
       "StratoBayes workshop"
@@ -62,39 +157,6 @@
     "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes.",
     "crumbs": [
       "Leisure"
-    ]
-  },
-  {
-    "objectID": "food-and-drinks.html",
-    "href": "food-and-drinks.html",
-    "title": "Catering",
-    "section": "",
-    "text": "There will be a coffee break in the morning and in the afternoon, during which coffee and tea will be served. Sandwiches will be served during lunch break.\nThe Icebreaker at 5pm on 18th March at St. John’s college is included for all participants.",
-    "crumbs": [
-      "Logistics",
-      "Catering"
-    ]
-  },
-  {
-    "objectID": "accomodation.html",
-    "href": "accomodation.html",
-    "title": "Accomodation",
-    "section": "",
-    "text": "Accomodation",
-    "crumbs": [
-      "Logistics",
-      "Accomodation"
-    ]
-  },
-  {
-    "objectID": "getting-here.html",
-    "href": "getting-here.html",
-    "title": "Getting here",
-    "section": "",
-    "text": "Getting here\nThe workshop takes place in Durham’s historic city centre, 20 minutes’ walk from the train station. Sessions will be held in the Tristram Room at St. John’s college: \nDurham can be reached by train in three hours from London, and two hours from Manchester or Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University.",
-    "crumbs": [
-      "Logistics",
-      "Getting here"
     ]
   },
   {
@@ -139,24 +201,6 @@
     "crumbs": [
       "Overview",
       "Schedule"
-    ]
-  },
-  {
-    "objectID": "organising-team.html",
-    "href": "organising-team.html",
-    "title": "Organising Team",
-    "section": "",
-    "text": "This workshop is an outcome of the Leverhulme grant A fizzle or a bang: how fast was the Cambrian ‘explosion’?, awarded to Martin Smith.\n\n\n\n  \n    \n    \n    \n        Kilian Eichenseer\n        Durham University\n    \n\n\n\n  \n    \n    \n    \n        Martin Smith\n        Durham University\n        \n    \n\n\n\n\n\n\n  \n    \n    \n    \n        Matthias Sinnesael\n        Trinity College Dublin\n    \n\n\n\n  \n    \n    \n    \n        Andrew Millard\n        Durham University"
-  },
-  {
-    "objectID": "accommodation.html",
-    "href": "accommodation.html",
-    "title": "Accommodation",
-    "section": "",
-    "text": "Accommodation\nThe closest accommodation can be found at St Chad’s college, a 3-minute walk from the workshop site. Single en-suite rooms are £69.50 per night, single rooms with access to a shared are £57 per night. Please contact St Chad’s college at +44 191 334 3358 or chads@durham.ac.uk for room booking. Rooms are available from 17th March.\nNearby hotels include the Travelodge, Premier Inn and Delta Hotels Durham Royal County.",
-    "crumbs": [
-      "Logistics",
-      "Accommodation"
     ]
   }
 ]

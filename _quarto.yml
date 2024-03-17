@@ -17,6 +17,7 @@ website:
           - schedule.qmd
           - organising-team.qmd
       - section: "Workshop material"
+        contents:
           - introduction-to-R.qmd
       - section: "Logistics"
         contents:

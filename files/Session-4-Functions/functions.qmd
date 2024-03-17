@@ -1,0 +1,1412 @@
+---
+title: | 
+  Writing functions in R
+subtitle: |
+  StratoBayes workshop, 18th - 20th March 2024, Durham, UK
+  
+  ![](images/logo-stratobayes.png){fig-align="center" height=200}
+author: "Kilian  Eichenseer, Durham University"
+affiliation: "Durham University"
+execute:
+  echo: true
+  eval: true
+format: 
+  html:
+    slide: true
+    self-contained: true
+    callout-icon: false
+    fontsize: 16pt
+    css: html.css
+    output-file: "functions.html"
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+  revealjs:
+    logo: "images/logo.png"
+    theme: default
+    embed-resources: true
+    output-file: "index.html"
+    fontsize: 24pt
+---
+
+# Function basics
+
+## What is a function
+
+takes input --\> does something --\> returns output
+
+::: fragment
+```{r}
+mean(c(1, 2, 3))
+```
+:::
+
+<br>
+
+::: fragment
+A function needs a [name]{style="color: cornflowerblue;"}, [arguments]{style="color: green;"} in (), and a [body]{style="color: darkorange;"} in {}
+
+```{=html}
+<pre><code>
+<span class="func-name">subtract</span> <- function(<span class="func-args">arg1, arg2</span>) { <span class="func-body">
+  arg1 - arg2 </span>
+} 
+</code></pre>
+```
+:::
+
+```{r, echo = FALSE}
+subtract <- function(arg1, arg2) {
+  arg1 - arg2
+}
+```
+
+<br>
+
+::: fragment
+```{r}
+subtract(2, 1)
+```
+:::
+
+## Why do we need functions
+
+::: columns
+::: {.column width="50%"}
+-   Readability
+-   Organisation
+:::
+
+::: {.column width="50%"}
+-   Modularity
+-   Reusability
+:::
+:::
+
+::: fragment
+Imagine calculating the mean without standard functions like `mean` or `sum`:
+:::
+
+::: fragment
+```{r}
+  data <- c(1,2,3)
+  total <- 0
+  count <- 0
+  for (value in data) {
+    total <- total + value
+    count <- count + 1
+  }
+  total/count
+
+```
+:::
+
+## Arguments
+
+Arguments need to be provided in the correct order, or specified by name: <br>
+
+::: fragment
+```{r}
+subtract(2, 1)
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+subtract(1, 2)
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+subtract(arg2 = 1, arg1 = 2)
+```
+:::
+
+## Default values
+
+Make function use more convenient, can hide complexities.
+
+::: fragment
+```{r, error=TRUE}
+subtract(2)
+```
+:::
+
+<br>
+
+::: fragment
+This will work if we set a default for `arg2`:
+
+```{r}
+subtract <- function(arg1, arg2 = 1) {
+  arg1 - arg2
+}
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+subtract(2)
+```
+:::
+
+<br>
+
+## Ellipsis ('...')
+
+Additional, optional arguments can be allowed by using '...' as the last argument:
+
+::: fragment
+```{r}
+my_plot <- function(arg1, arg2, ...) {
+  plot(arg1, arg2, ...)
+}
+```
+:::
+
+<br>
+
+::: fragment
+```{r, eval=FALSE}
+my_plot(2, 1, col = "red", pch = 17, cex = 2)
+```
+
+```{r, echo = FALSE}
+#| out-width: 29%
+#| fig-width: 2.5
+#| fig-height: 2.5
+#| fig-align: left
+par(mar=c(4,4,0.2,0.2), mgp = c(2.25,.9,0))
+my_plot(2, 1, col = "red", pch = 17, cex = 2)
+
+```
+:::
+
+## Return
+
+A function generally should return something, but this does not:
+
+::: fragment
+```{r}
+subtract <- function(arg1, arg2) {
+  result <- arg1 - arg2
+}
+```
+:::
+
+::: fragment
+```{r}
+subtract(2,1)
+```
+:::
+
+<br>
+
+::: fragment
+Return explicitly with `return`, or place return value at the end of the function:
+
+```{r}
+subtract <- function(arg1, arg2) {
+  result <- arg1 - arg2
+  return(result)
+}
+```
+:::
+
+::: fragment
+```{r}
+subtract(2,1)
+```
+:::
+
+<br>
+
+## Return multiple objects
+
+::: fragment
+```{r}
+just_return <- function(arg1, arg2) {
+return(arg1)
+return(arg2)
+}
+```
+:::
+
+::: fragment
+```{r}
+just_return(2, 1)
+```
+
+This did not work as intended. R functions only return one object. Instead use lists or other data structures:
+:::
+
+::: fragment
+```{r}
+just_return <- function(arg1, arg2) {
+return(c(arg1, arg2))
+}
+```
+:::
+
+::: fragment
+```{r}
+just_return(2, 1)
+```
+:::
+
+## Exercise 1a - Building a function
+Write a function that adds two values and creates a scatter plot with first value on the x-axis and the result on the y axis.
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+First, we add the two values and save it in an object within the function. Then, we use the `plot` function to create a scatter plot with `x` being the first value, and `y` being the object we created with the addtion. 
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+add_and_plot <- function(a, b) {
+  result <- a + b
+  plot(a, result)
+}
+
+```
+</details>
+
+
+## Exercise 1b - Expanding a function
+Expand the function you just created to let it return the result after plotting
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+We can place the object we want to return at the end of our function, or use the `return` function.
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+add_and_plot <- function(a, b) {
+  result <- a + b
+  plot(a, result)
+  result
+}
+```
+</details>
+
+## Exercise 1c - Passing additional arguments
+Expand the function further by allowing customisation of the plot by changing graphical parameters.
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+We can use ellipsis (`...`) as a function argument in the outer and the inner function to allow for additional arguments being passed. 
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+add_and_plot <- function(a, b, ...) {
+  result <- a + b
+  plot(a, result, ...)
+  result
+}
+```
+</details>
+
+
+# Binary operators
+
+## Binary operators
+
+::: columns
+::: {.column width="50%"}
+::: fragment
+Standard function syntax:
+
+```{r}
+sum(c(1,2))
+```
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+Operator syntax:
+
+```{r}
+1 + 2
+```
+:::
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+::: fragment
+Most binary operators come in `%`:
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+```{r}
+3 %in% c(1,2,3)
+```
+:::
+:::
+:::
+
+<br>
+
+::: fragment
+Custom binary operators -- let's define an operator for "not in":
+
+```{r}
+`%!in%` <- function(x, y) !(x %in% y)
+```
+:::
+
+::: fragment
+```{r}
+3 %!in% c(1,2,3)
+```
+:::
+
+# Control structures
+
+## Control structures -- if
+
+`if` a condition is true, do something.
+
+::: fragment
+```{r}
+if (1 + 1 == 2) print("True")
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+add_or_subtract <- function(arg1, arg2, operation) {
+ if (operation == "add") {
+   result <- arg1 + arg2
+ }
+ if (operation == "subtract") {
+   result <- arg1 + arg2
+ }
+ result
+}
+```
+:::
+
+::: fragment
+```{r}
+add_or_subtract(2,1,"add")
+```
+:::
+
+## Control structures -- else
+
+`else` instructs what to do when the `if` condition is not met.
+
+::: fragment
+```{r}
+if (1 + 1 == 3) print("True") else print("False")
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+add_or_subtract <- function(arg1, arg2, operation) {
+ if (operation == "add") {
+   result <- arg1 + arg2
+ } else {
+   result <- arg1 - arg2
+ }
+ return(result)
+}
+```
+:::
+
+::: fragment
+```{r}
+add_or_subtract(2,1,"subtract")
+```
+:::
+
+## Control structures -- switch
+
+Instead of many `if` and `else` statements, try `switch`
+
+::: fragment
+```{r}
+fossil_description <- function(fossil) {
+ switch(fossil,
+  ammonite = "coiled shell",
+  Tyrannosaurus = "serrated teeth",
+  Lepidodendron = "scaly bark",	
+  "not a fossil"
+ )
+}
+```
+:::
+
+::: fragment
+```{r}
+fossil_description("Tyrannosaurus")
+```
+:::
+
+::: fragment
+```{r}
+fossil_description("laptop")
+```
+:::
+
+## Control structures -- for loops
+
+Loops are used for repeating similar actions multiple times. `for` loops iterate over a set of values. The iterator (`i`) changes with every iteration of the loop:
+
+::: fragment
+```{r}
+for (i in c(1,2,3)) print(i)
+```
+:::
+
+::: fragment
+To generate sequences of integers, we can use `seq_len`. Let's make a function:
+
+```{r}
+print_repetitions <- function(n) {
+ for (i in seq_len(n)) { 
+   print(i)
+ }
+}
+```
+:::
+
+::: fragment
+```{r}
+print_repetitions(2)
+```
+:::
+
+## Control structures -- while loops
+
+`while` loops repeat a task until a condition is no longer met.
+
+::: fragment
+```{r}
+add_until_4 <- function(x) {
+  while(x < 4) {
+    x <- x + 1
+    print(x)
+  }
+}
+```
+:::
+
+::: fragment
+```{r}
+add_until_4(1)
+```
+:::
+
+## Exercise 2a - Building a loop
+Create a for loop that calculates the mean of all numerical columns of the `Talat_isotopes` dataset.
+If the dataset is not already loaded, we can read it with: 
+```{r}
+# read the "Talat_n_Yissi_isotopes.csv" from session 3:
+Talat_isotopes <- read.csv("data/Talat_n_Yissi_isotopes.csv", 
+                           header = TRUE)
+```
+
+### Hint 1
+<details>
+  <summary>Click to expand/collapse</summary>
+To check if a column is numeric, we can use `is.numeric` on the column. Using `if` and possibly `else` allows us to do different operations depending on the outcome of `is.numeric`.
+
+Selecting a column can be done with square brackets, e.g. `Talat_isotopes[ ,1]` selects the first column.
+
+To get the number of columns of `Talat_isotopes`, we can use the `ncol` function.
+</details>
+
+### Hint 2
+<details>
+  <summary>Click to expand/collapse</summary>
+Start a loop for example with `for (i in seq_len(ncol(Talat_isotopes))) { }` to run it for one iteration per number of columns. Everything inside the curly brackets is done exactly the same in each iteration, except `i` changes. To print the output at every iteration of the function, we can use the `print` function.
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+# save number of columns
+nCol <- ncol(Talat_isotopes)
+# run loop for nCol iterations
+for (i in seq_len(nCol)) {
+  if(is.numeric(Talat_isotopes[,i])) {
+    print(mean(Talat_isotopes[,i]))
+  }
+}
+```
+</details>
+
+## Exercise 2b - Turn the loop into a function
+From the loop created in exercise 1, create a function that takes the `Talat_isotopes` dataframe (or any other dataframe) as input and returns the means of numerical columns as output. 
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+We can return the output by saving the result of every iteration of the loop in an object, and then return that object. We can omit `NA` output by indexing with `!is.na`.
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+numericColumnMean <- function(df) {
+  # save number of columns
+  nCol <- ncol(df)
+  # create a vector for the output
+  output <- rep(NA,nCol)
+  # run loop for nCol iterations
+  for (i in seq_len(nCol)) {
+    if(is.numeric(df[,i])) {
+      output[i] <- mean(df[,i])
+    } else {  # NA for non-numeric columns:
+      output[i] <- NA 
+      }
+  }
+  # return output that is not NA
+  output[!is.na(output)]
+}
+# apply function
+numericColumnMean(Talat_isotopes)
+```
+</details>
+
+
+# Apply and similar functions
+
+## apply
+
+-   `apply` and related functions apply a function to elements of arrays, lists, ...
+-   more concise than loops and don't change global environment
+
+::: fragment
+For example, to get the classes of the first three columns of the `Talat_isotopes` data:
+
+```{r}
+Talat_classes <- rep(NA,3)
+for (i in 1:3) {
+  Talat_classes[i] <- class(Talat_isotopes[,i])
+}
+Talat_classes
+```
+:::
+
+::: fragment
+Or with apply:
+
+```{r}
+apply(Talat_isotopes[,1:3], MARGIN = 2, FUN = class)
+```
+:::
+
+## apply
+
+Let's have a look what happened there. `apply(X, MARGIN, FUN)` takes an array X (our `Talat_isotopes` dataframe), and applies a function (FUN) to elements of that array, specified by MARGIN.
+
+::: {style="margin-top: 1em;"}
+:::
+
+::: fragment
+MARGIN = 2 indicates columns, MARGIN = 1 would be rows. So here we applied the `class` function to every column of `Talat_isotopes`.
+
+![](images/Talat_df.png){fig.align="center" height="200pt"}
+:::
+
+::: fragment
+`apply` simplifies the output, so here it returned a `vector` with one element for each column.
+:::
+
+## lapply
+
+`lapply` is similar to apply but for list or vector input. It returns a list for each element of the data.
+
+::: fragment
+```{r}
+data <- list(c(1, 2, 3), c(4, 5))
+lapply(data, mean)
+```
+:::
+
+::: {style="margin-top: 0.75em;"}
+:::
+
+::: fragment
+`sapply` does the same, but also tries to simplify the output; here we get a vector:
+
+```{r}
+data <- list(c(1, 2, 3), c(4, 5))
+sapply(data, mean)
+```
+:::
+
+## vapply
+
+`vapply` is a safer version of `sapply`, it requires the user to specify the anticipated class and length of the elements of the output:
+
+::: {style="margin-top: 1.25em;"}
+:::
+
+::: fragment
+```{r}
+data <- list(c(1, 2, 3), c(4, 5))
+vapply(data, FUN = mean, FUN.VALUE = numeric(1))
+```
+
+::: {style="margin-top: 1em;"}
+:::
+
+Here, we specified in FUN.VALUE that each element of the output should be a numeric of length 1.
+:::
+
+## Exercise 3a - Use apply to calculate column means
+
+In exercise 2, we built a function that calculated the mean of all numerical columns of the `Talat_isotopes` dataset and returned it.
+
+Can we achieve the same using `apply`?
+
+This task is trickier than it looks like as `apply` coerces all columns to type `character` as soon as there is even one `character` column. We can add `as.numeric` to try and force columns into numeric. Better yet, we just select the columns containing values that can be coerced to be numeric:
+
+```{r}
+numeric_columns <- c("d18O", "d13C", "m", "age", "m.my")
+Talat_numeric <- Talat_isotopes[ ,numeric_columns]
+```
+
+### Hint 1
+<details>
+  <summary>Click to expand/collapse</summary>
+
+The second argument of `apply`, `MAR`, needs to be set to `2` for columnwise operations. 
+
+In the third argument, we can define a function, for example `function(col) { }` will modify each column according to the instructions in curly brackets, refering to the column as `col`.
+
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+```{r}
+apply(Talat_numeric, 2, function (col) {
+  mean(col)
+  }
+)
+```
+Or simply:
+```{r}
+apply(Talat_numeric, 2, mean)
+```
+
+</details>
+
+
+## Exercise 3b - Reading a messy dataset
+
+The Talat_isotopes and Talat_elements datasets are contained in a mulit-sheet Excel file from the supplementary materials [Maloof et al. (2010)](https://maloof.princeton.edu/sites/g/files/toruqf1016/files/22maloof.pdf). It is in the `data` folder and named `Maloof_et_al_2010_SM.xls`.
+
+Reading such files with R can be a challenge and it is often easier to copy-paste the relevant data into clean spreadsheets and save them as .csv files.
+
+However, here we try to automate the reading of sheets from this particular file, starting from the sheet Morocco-Talat n' Yissi`.
+
+We start by installing and loading the `readxl` package.
+```{r}
+# Install and load the readxl package if you haven't already
+if (!require(readxl)) install.packages("readxl")
+library(readxl)
+```
+
+We notice that the `Morocco-Talat n' Yissi` sheet has two header rows, and the formatting is messy.
+
+We read in the header rows of the sheet `4. Morocco-Talat n' Yissi`: 
+```{r}
+# specify the file path
+file_path <- "data/Maloof_et_al_2010_SM.xls"
+# specify the sheet name
+sheet_name <- "4. Morocco-Talat n' Yissi"
+# read the top two rows
+# trim_ws stops omitting empty cells
+# col_names = FALSE stops cells being used as column names
+header_rows <- read_excel(file_path, sheet = sheet_name, n_max = 2,
+                          trim_ws = FALSE, col_names = FALSE)
+```
+
+Next, we merge the header rows as we want only a single column name per column:
+```{r}
+column_names <- apply(header_rows, 2, function(x) paste(na.omit(x), collapse = "_"))
+```
+
+Finally, we use these column names for reading the entire data set, skipping the first two problematic rows:
+```{r}
+talat <- read_excel(file_path, sheet = sheet_name, skip = 2, col_names = column_names)
+```
+
+The result looks reasonable:
+```{r}
+head(talat[ ,c(1:4)])
+```
+
+**Exercise:** Can you build a function from the above and apply it to other sheets of the `Maloof_et_al_2010_SM.xls` file? We can also build a second function that uses this function to read multiple sheets at once.
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+We can almost copy-paste the lines we used to read the sheet earlier and collate them in a function.
+
+We need two arguments: the `file_path`, and the `sheet_index`.
+
+`lapply` is useful if we want to use that function on multiple sheets at once.
+
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+  Here is a function that reads a single sheet:
+```{r}
+read_sheets_Maloof <- function(file_path, sheet_index) {
+  # read the top two rows
+  header_rows <- read_excel(file_path, sheet = sheet_index, n_max = 2,
+                            trim_ws = FALSE, col_names = FALSE)
+  # merge to column names
+  column_names <- apply(header_rows, 2, function(x) {
+    paste(na.omit(x), collapse = "_")
+  })
+  # read the rest of the file
+  output <- read_excel(file_path, sheet = sheet_index, 
+                       skip = 2, col_names = column_names)
+  output
+}
+```
+
+Using `lapply`, we can build a simple function that uses the previous function to read multiple sheets at once and saves them as a list of dataframes. Here, we use the indices of the sheets, rather than the names, so we don't have to type out the complicated sheet names.
+```{r}
+multi_sheets_Maloof <- function(file_path, sheet_index, 
+                                read_function) {
+  # do this for every sheet index (integers)
+  lapply(sheet_index, function(s) {
+    read_function(file_path = file_path, sheet_index = s)
+  })
+}
+```
+
+From here, you could try to combine the dataframes e.g. using `merge`.
+</details>
+
+# Environment and scoping
+
+## Environment
+
+Environment can be conceptualised as a place where objects with a name and value exist.
+
+::: fragment
+For example, when we run
+
+```{r}
+x <- 1
+```
+
+`x` now exists in the global environment, and has the value `1`.
+:::
+
+<br>
+
+::: fragment
+Each function, `for` loop, ..., creates its own environment.
+:::
+
+## Environment
+
+If we run the following function to assign to `b` the value of `a`
+
+```{r}
+a_to_b <- function(a) b <- a
+a_to_b(a = 1)
+```
+
+::: fragment
+and then look for `b` in the global environment
+:::
+
+::: fragment
+```{r, error=TRUE}
+b
+```
+
+we get an error because `b` only existed within the function environment.
+:::
+
+<br>
+
+::: fragment
+More on environments: [adv-r.hadley.nz/environments.html](https://adv-r.hadley.nz/environments.html)
+:::
+
+## Scoping
+
+R uses scoping rules to look for variables (or functions). If a variable is not found in a function environment, R looks in the parent environment (i.e. the environment in which the function was created).
+
+::: fragment
+```{r}
+x <- 1
+double_x <- function(y) 2 * x + y
+double_x(0)
+```
+:::
+
+::: fragment
+`x` is a free variable in the `double_x` function -- it is not supplied to or defined in the function. Instead, it's looked up in the environment where `double_x` was created, the global environment.
+
+::: {style="margin-top: 1em;"}
+:::
+
+This can get tricky, see here for more details: [bookdown.org/rdpeng/rprogdatascience/scoping-rules-of-r.html](https://bookdown.org/rdpeng/rprogdatascience/scoping-rules-of-r.html)
+:::
+
+## Exercise 4 - Use `vapply` to return the three highest d13C values for every stage in `Talat_isotopes`
+
+As a starting point, extract the unique `stage` names from the `Talat_isotopes` dataframe using the `unique` function:
+``` {r}
+unique_stages <- unique(Talat_isotopes$stage)
+```
+
+### Hint
+<details>
+  <summary>Click to expand/collapse</summary>
+
+We can use this as our first argument to `vapply`, and use `subset` to select only the values of `d13C` that are from a specific stage. 
+
+The `sort` function can be useful to sort the `d13C` values in decreasing order, for example:
+```{r}
+# function to return three largest elements of a vector
+three_largest <- function(x) {
+  # sort vector in decreasing order
+  x <- sort(x, decreasing = TRUE)
+  # return the first three values
+  x[1:3]
+}
+```
+
+Instead of passing `Talat_isotopes` as an argument, we can let it look up in the global environment, where it was defined.
+
+The third argument of `vapply` needs to specify the class and length of the output. In our case, it will be three numeric values: `numeric(3)`
+
+</details>
+
+### Solution
+<details>
+  <summary>Click to expand/collapse</summary>
+The first solution takes advantage of R functions being able to find variables that were defined outside the function environment: 
+```{r}
+# build a custom function for vapply
+three_largest_stages <- function(s) {
+  # subset to only include rows from the current stage
+  # note: we haven't passed Talat_isotopes as a function argument
+  Talat_isotopes <- subset(Talat_isotopes, stage == s)
+  # extract three largest values
+  three_largest(Talat_isotopes$d13C)
+}
+# put everything together
+vapply(unique_stages, FUN = three_largest_stages, 
+       FUN.VALUE = numeric(3))
+```
+`vapply` has returned the output as a matrix.
+
+The function above works because `Talat_isotopes` is accessed from the global environment, but only modified within the  function environment.
+
+*Caution: This can lead to confusion and it is often better to avoid this.*
+
+A cleaner solution would be to pass `Talat_isotopes` as a second argument to the `three_largest_stages` function.
+
+</details>
+
+
+# Testing and Debugging
+
+## Error handling
+
+Very helpful in complex functions
+
+::: fragment
+```{r}
+subtract(2, 1)
+```
+:::
+
+::: fragment
+```{r, error=TRUE}
+subtract("2", 1)
+```
+:::
+
+::: {style="margin-top: 0.25em;"}
+:::
+
+::: fragment
+Check that input is correct and display custom error messages:
+
+```{r}
+subtract <- function(arg1, arg2) {
+  if (is.numeric(arg1) == FALSE) {
+    stop("`arg1` must be numeric") 
+    }
+  arg1 - arg2
+}
+```
+:::
+
+::: fragment
+```{r, error=TRUE}
+subtract("2", 1)
+```
+:::
+
+## tryCatch
+
+Use if you anticipate an error but want function to continue.
+
+::: {style="margin-top: 0.5em;"}
+:::
+
+::: fragment
+Let's try to generate data from a multivariate normal distribution:
+
+```{r, error=TRUE}
+mvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))
+```
+:::
+
+::: {style="margin-top: 0.5em;"}
+:::
+
+::: fragment
+`mvnfast::rmvn` is fast but fails for some problematic `sigma` values. In case it fails, we use `MASS::mvrnorm` instead:
+
+```{r, error=TRUE}
+my_rmvn <- function(n, mu, sigma) {
+  tryCatch(mvnfast::rmvn(n, mu, sigma),
+           error = function(e) MASS::mvrnorm(n, mu, sigma))
+}
+```
+:::
+
+::: fragment
+```{r, error=TRUE}
+my_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))
+```
+:::
+
+## Traceback
+
+If something went wrong, find out where using `traceback()`:
+
+::: fragment
+```{r,error=TRUE}
+my_rmvn(n = 1, mu = 0, sigma = matrix(rep(1,4), 2))
+```
+:::
+
+::: {style="margin-top: 1em;"}
+:::
+
+::: fragment
+```{r,eval=FALSE}
+traceback()
+```
+
+![](images/traceback.png){fig.align="center"}
+:::
+
+## Break points
+
+Break points allow you to look inside your function's environment. This works best when the function is in a separate script. Click next to a line of code in your function to activate a break point (a [red]{style="color: red;"} dot appears):
+
+::: fragment
+![](images/debug1.png){fig.align="center"}
+:::
+
+::: fragment
+Now run the function...
+
+```{r, eval=FALSE}
+my_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))
+```
+:::
+
+::: fragment
+You may need to save the script and source it (press `source` in the Rstudio toolbar)
+:::
+
+## Break points
+
+![](images/debug2.png){fig.align="center"}
+
+## Break points
+
+We can now browse the function environment in the console like we normally can browse the global environment. For example we can look at `sigma`:
+
+![](images/debug3.png){fig.align="center" height="225pt"}
+
+Press `Stop` to end the browsing. Don't forget to deactivate the break point by clicking on the [red]{style="color: red;"} dot in the script.
+
+# Advanced tools and concepts
+
+## do.call
+
+`do.call()` takes a function and a list of arguments, and applies the function to the arguments. This can be useful in a variety of situations:
+
+<br>
+
+::: fragment
+To combine data:
+
+```{r}
+a <- list(c(1, 2, 3), c(4, 5, 6))
+do.call(rbind, a)
+```
+:::
+
+<br>
+
+::: fragment
+When we have a function name as a string:
+
+```{r}
+my_function <- "mean"
+do.call(my_function, list(c(1, 2, 3)))
+```
+:::
+
+## do.call
+
+With dynamic arguments:
+
+::: fragment
+For example, we want to allow the user to specify additional arguments for a custom plot function, including `xlim`. In case he doesn't specify it, we want to automatically generate `xlim` values:
+:::
+
+::: fragment
+```{r}
+my_plot <- function(x, ...) {
+    args <- list(...) # save the additional arguments
+  if("xlim" %in% names(args)) {
+    xlim <- args$xlim # if user provides xlim, use that
+    args$xlim <- NULL # to avoid argument duplication
+  } else {
+    xlim <- range(x) + c(-1, 1) # automatic xlim
+  }
+  do.call(plot, c(list(x = x, xlim = xlim), args))
+}
+```
+:::
+
+## do.call
+
+```{r, fig.width=6, fig.height=3.3}
+par(mfrow = c(1,2))
+my_plot(1:3, pch = 17, 
+        main = "automatic xlim")
+my_plot(1:3, pch = 17, xlim = c(1, 5), 
+        main = "user-specified xlim")
+```
+
+
+## Measuring performance
+
+If you have large data sets and complex functions, you may want to enhance their performance.
+
+<br>
+
+::: fragment
+To check how long an operation takes, use system.time:
+
+```{r}
+system.time(rnorm(10^6))
+```
+:::
+
+## Measuring performance
+
+The `microbenchmark` package performs an operation many times, and measures the average time it takes. You can also compare different operations.
+
+<br>
+
+::: fragment
+What is faster, `rnorm` or `rlnorm`?
+
+```{r}
+microbenchmark::microbenchmark(rnorm(10^4),
+                               rlnorm(10^4))
+
+```
+:::
+
+## Profiling
+
+The `profvis` package lets you identify bottlenecks in your code:
+
+::: fragment
+```{r, eval=FALSE}
+short_pause <- function(x) Sys.sleep(0.1 * x)
+long_pause <- function(x) Sys.sleep(0.2 * x)
+
+time_waste <- function(x) {
+  short_pause(x)
+  long_pause(x)
+}
+```
+
+```{r, eval=FALSE}
+profvis::profvis(time_waste(1))
+
+```
+:::
+
+::: fragment
+![](images/profiling.png)
+:::
+
+## Speeding up functions
+
+Only spend time trying to make your code faster if
+
+-   it works as intended
+-   you have identified the parts that are slowing it down
+
+<br>
+
+::: fragment
+Here is a good overview on making R functions run faster: [Best coding practices in R](https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/speedtips.html)
+:::
+
+## Memory allocation
+
+Pre-allocating memory is faster than growing objects repeatedly.
+
+::: fragment
+Assume, we have recorded the results of 1,000 dice rolls:
+
+```{r}
+data <- sample.int(6, n = 100, replace = TRUE)
+
+```
+:::
+
+::: fragment
+Now, we want to check which ones show "6". Compare these two approaches:
+
+::: columns
+::: {.column width="50%"}
+```{r}
+is_six_1 <- function(x) {
+  res <- NULL
+  for (i in seq_along(x)) {
+    res[i] <- x[i] == 6
+  }
+  res
+}
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+is_six_2  <- function(x) {
+  res <- rep(NA,length(x))
+  for (i in seq_along(x)) {
+    res[i] <- x[i] == 6
+  }
+  res
+}
+```
+:::
+:::
+:::
+
+## Memory allocation
+
+Let's check which approach is faster:
+
+```{r}
+microbenchmark::microbenchmark(is_six_1(data),
+                               is_six_2(data), times = 1000)
+```
+
+<br>
+
+::: fragment
+`is_six_2()` is faster, as R doesn't have to grow the `res` object in every iteration.
+:::
+
+## Vectorisation
+
+R has many functions that are vectorised. <br>
+
+::: fragment
+Instead of running a loop to check each value of our dice rolls, we can check them all at once by taking advantage of the ability of `==` to take vector input:
+
+::: columns
+::: {.column width="50%"}
+```{r}
+is_six_2  <- function(x) {
+  res <- rep(NA,length(x))
+  for (i in seq_along(x)) {
+    res[i] <- x[i] == 6
+  }
+  res
+}
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+is_six_3 <- function(x) {
+  x == 6
+}
+```
+:::
+:::
+:::
+
+## Vectorisation
+
+```{r}
+microbenchmark::microbenchmark(is_six_2(data), 
+                               is_six_3(data), times = 1000)
+```
+
+<br>
+
+The vectorised version `is_six_3()` is much faster.
+
+## Vectorisation
+
+Vectorised matrix functions like `rowSums()`, `colSums()` or `rowMeans()`can lead to impressive speedups:
+
+::: fragment
+```{r}
+data <- matrix(rnorm(10^4), nrow = 100)
+
+microbenchmark::microbenchmark(
+  apply(data, 2, sum),
+  colSums(data),
+  times = 1000)
+```
+:::
+
+## Rcpp
+
+The `Rcpp` package allows for integrating C++ code with R, which can make R functions a lot faster. It requires the installation of a C++ compiler ([R tools](https://cran.r-project.org/bin/windows/Rtools/) for Windows, Xcode for Mac, possibly "sudo apt-get install r-base-dev" on Linux)
+
+<br>
+
+::: fragment
+Read more at [Rcpp: Seamless R and C++ Integration](https://dirk.eddelbuettel.com/code/rcpp.html) or [Avanced R](http://adv-r.had.co.nz/Rcpp.html)
+:::
+
+<br>
+
+::: fragment
+I also highly recommend [ChatGpt](https://chat.openai.com/) for help with creating C++ functions.
+:::
+
+## Rcpp
+
+As an example, let's compare a random walk implemented in R with one implemented with Rcpp.
+
+::: fragment
+First, the R version:
+
+```{r}
+random_walk_R <- function(steps) {
+  walk <- numeric(steps)
+  for (i in 2:steps) {
+    walk[i] <- walk[i-1] + ifelse(runif(1) > 0.5, 1, -1)
+  }
+  return(walk)
+}
+```
+:::
+
+## Rcpp
+
+Next, the Rcpp version:
+
+```{r, eval=FALSE}
+library(Rcpp)
+sourceCpp(
+'#include <Rcpp.h>
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+NumericVector random_walk_Rcpp(int steps) {
+  NumericVector walk(steps);
+  for(int i = 1; i < steps; i++) {
+    walk[i] = walk[i-1] + (R::runif(0, 1) > 0.5 ? 1 : -1);
+  }
+  return walk;
+}')
+
+```
+
+::: fragment
+We now have the function `random_walk_Rcpp` in the global environment.
+:::
+
+## Rcpp
+
+Let's make sure both versions work:
+
+```{r, eval = FALSE}
+plot(random_walk_R(1000), type = "l", ylim = c(-50,50))
+points(random_walk_Rcpp(1000),type = "l", col = "red")
+```
+
+![](images/randomwalk.png){fig.align="center" height="300pt"}
+
+## Rcpp
+
+Now let us compare the speed:
+
+```{r, eval = FALSE}
+microbenchmark::microbenchmark(
+  random_walk_R(1000),
+  random_walk_Rcpp(1000),
+  times = 100)
+```
+
+![](images/randomwalkmicro.png)
+
+<br>
+
+::: fragment
+Loops are much faster in C++!
+:::
