@@ -16,11 +16,12 @@ website:
           - sign-up.qmd
           - schedule.qmd
           - organising-team.qmd
+      - section: "Workshop material"
+          -introduction-to-R.qmd
       - section: "Logistics"
         contents:
           - getting-here.qmd
           - food-and-drinks.qmd
-          - accommodation.qmd
       - leisure.qmd
       # - section: "Content"
         # contents:
