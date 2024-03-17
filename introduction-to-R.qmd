@@ -3,7 +3,7 @@ title: "Introduction to R"
 ---
 
 ## Session 1 - Introduction to R and RStudio
-Worksheet for Session 1
+[Worksheet for Session 1](https://github.com/StratoBayes/StratoBayes.github.io/blob/main/files/Session%201%20Introduction%20to%20R%20and%20RStudio.docx)
 
 ## Session 2
 
