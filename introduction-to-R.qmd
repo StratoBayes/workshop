@@ -1,19 +1,21 @@
 ---
 title: "Introduction to R"
 ---
+The files are hosted on the StratoBayes workshop Github repository. Download them by following any of the links below, click on the three dots (`...`) in the top right corner, and select `Download`.
 
 ## Session 1 - Introduction to R and RStudio
-[Worksheet for Session 1](https://github.com/StratoBayes/StratoBayes.github.io/blob/main/files/Session%201%20Introduction%20to%20R%20and%20RStudio.docx)
+[Worksheet for Session 1](https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%201%20Introduction%20to%20R%20and%20RStudio.docx)
 
 ## Session 2
-[Worksheet for Session 2](https://github.com/StratoBayes/StratoBayes.github.io/blob/main/files/Session%202%20Handling%20data.docx)
+[Worksheet for Session 2](https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%202%20Handling%20data.docx)
 
 ## Session 3
-[Worksheet for Session 3](https://github.com/StratoBayes/StratoBayes.github.io/blob/main/files/Session%203%20Visualising%20and%20describing%20data.docx)
+[Worksheet for Session 3](https://github.com/StratoBayes/StratoBayes.github.io/blob/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session%203%20Visualising%20and%20describing%20data.docx)
 
 ## Session 4
-[Worksheet for Session 4](https://github.com/StratoBayes/StratoBayes.github.io/blob/main/files/Session-4-Functions/Session%204%20Functions.html)
+[Worksheet for Session 4](https://github.com/StratoBayes/StratoBayes.github.io/tree/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/Session-4-Functions)
+The worksheet is the file Session 4 Functions.html. 
 
 ## Data and R scripts
 The data and R scripts for the sessions are found here:
-[Data and R scripts](https://github.com/StratoBayes/StratoBayes.github.io/tree/main/files/data)
+[Data and R scripts](https://github.com/StratoBayes/StratoBayes.github.io/tree/ec1593c0201a0c439a6f12e94343b0d8b3c3d3d2/files/data)

@@ -6112,7 +6112,7 @@ Click to expand/collapse
 <div class="cell">
 <div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">my_rmvn</span>(<span class="at">n =</span> <span class="dv">1</span>, <span class="at">mu =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">sigma =</span> <span class="fu">matrix</span>(<span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">4</span>), <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.8704677 0.8704677</code></pre>
+<pre><code>[1] 0.9365439 0.9365439</code></pre>
 </div>
 </div>
 </div>
@@ -6243,7 +6243,7 @@ Click to expand/collapse
 <div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system.time</span>(<span class="fu">rnorm</span>(<span class="dv">10</span><span class="sc">^</span><span class="dv">6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   user  system elapsed 
-   0.03    0.00    0.04 </code></pre>
+   0.04    0.00    0.03 </code></pre>
 </div>
 </div>
 </div>
@@ -6259,9 +6259,9 @@ Click to expand/collapse
 <span id="cb132-2"><a href="#cb132-2" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">rlnorm</span>(<span class="dv">10</span><span class="sc">^</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unit: microseconds
-         expr     min       lq     mean   median       uq     max neval
-  rnorm(10^4) 328.200 350.5020 358.4700 353.3000 357.6515 546.801   100
- rlnorm(10^4) 843.502 873.8515 880.0799 876.5005 882.0520 976.001   100</code></pre>
+         expr     min       lq     mean  median       uq     max neval
+  rnorm(10^4) 336.101 352.0505 355.5161 354.251 357.5015 391.301   100
+ rlnorm(10^4) 864.301 875.7010 881.6771 879.051 884.4010 976.601   100</code></pre>
 </div>
 </div>
 </div>
@@ -6343,9 +6343,9 @@ Click to expand/collapse
 <span id="cb139-2"><a href="#cb139-2" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">is_six_2</span>(data), <span class="at">times =</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unit: nanoseconds
-           expr  min   lq     mean median     uq     max neval
- is_six_1(data) 1200 1301 3256.709   1301 1500.0 1723201  1000
- is_six_2(data)  700  802 2577.704    901 1000.5 1613601  1000</code></pre>
+           expr  min   lq     mean median   uq     max neval
+ is_six_1(data) 1200 1301 3112.876   1401 1502 1517502  1000
+ is_six_2(data)  700  801 2932.696    901 1001 1906000  1000</code></pre>
 </div>
 </div>
 <p><br></p>
@@ -6387,8 +6387,8 @@ Click to expand/collapse
 <div class="cell-output cell-output-stdout">
 <pre><code>Unit: nanoseconds
            expr min  lq     mean median   uq     max neval
- is_six_2(data) 700 900 3303.916    901 1001 2115301  1000
- is_six_3(data) 100 201  977.486    201  202  712901  1000</code></pre>
+ is_six_2(data) 700 900 3021.499    901 1000 1987102  1000
+ is_six_3(data) 100 201  912.088    201  202  658401  1000</code></pre>
 </div>
 </div>
 <p><br></p>
@@ -6407,9 +6407,9 @@ Click to expand/collapse
 <span id="cb145-6"><a href="#cb145-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">times =</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unit: microseconds
-                expr     min      lq       mean   median      uq      max neval
- apply(data, 2, sum) 117.501 139.801 206.898466 173.7005 200.701 9872.602  1000
-       colSums(data)   5.902   6.402   7.371136   6.8010   7.301   64.401  1000</code></pre>
+                expr     min      lq       mean  median      uq       max neval
+ apply(data, 2, sum) 124.401 139.401 212.169586 167.251 203.501 12181.502  1000
+       colSums(data)   5.801   6.301   7.440696   6.601   7.101   107.701  1000</code></pre>
 </div>
 </div>
 </div>
