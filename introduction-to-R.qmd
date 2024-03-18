@@ -2,7 +2,7 @@
 title: "Introduction to R"
 ---
 
-The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, click on the three dots (`...`) in the top right corner, and select `Download`.
+The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (`...`) in the top right corner, and select `Download`.
 
 ## Session 1 - Introduction to R and RStudio
 
