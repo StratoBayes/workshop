@@ -1,0 +1,16 @@
+---
+title: "Day 2 - StratoBayes"
+---
+
+The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (`...`) in the top right corner, and select `Download`.
+
+## Bayes theorem and MCMC
+
+[Worksheet for the session:](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/Bayes%20theorem%20and%20MCMC.docx)
+
+[R script bvn_gibbs.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bvn_gibbs.R)
+
+[R script bimodal_walker.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bimodal_walker.R)
+
+
+## StratoBayes tutorial

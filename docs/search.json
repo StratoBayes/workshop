@@ -24,67 +24,67 @@
   {
     "objectID": "introduction-to-R.html",
     "href": "introduction-to-R.html",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "",
     "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download.",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
     "objectID": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
     "href": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "Session 1 - Introduction to R and RStudio",
     "text": "Session 1 - Introduction to R and RStudio\nWorksheet for Session 1",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
     "objectID": "introduction-to-R.html#session-2---handling-data-import-and-manipulation",
     "href": "introduction-to-R.html#session-2---handling-data-import-and-manipulation",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "Session 2 - Handling data: import and manipulation",
     "text": "Session 2 - Handling data: import and manipulation\nWorksheet for Session 2",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
     "objectID": "introduction-to-R.html#session-3---visualising-and-describing-data",
     "href": "introduction-to-R.html#session-3---visualising-and-describing-data",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "Session 3 - Visualising and describing data",
     "text": "Session 3 - Visualising and describing data\nWorksheet for Session 3",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
     "objectID": "introduction-to-R.html#session-4---writing-functions-in-r",
     "href": "introduction-to-R.html#session-4---writing-functions-in-r",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "Session 4 - Writing functions in R",
     "text": "Session 4 - Writing functions in R\nWorksheet for Session 4 The worksheet is the file Session 4 Functions.html.",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
     "objectID": "introduction-to-R.html#data-and-r-scripts",
     "href": "introduction-to-R.html#data-and-r-scripts",
-    "title": "Introduction to R",
+    "title": "Day 1 - Introduction to R",
     "section": "Data and R scripts",
     "text": "Data and R scripts\nThe data and R scripts for the sessions are found here: Data and R scripts",
     "crumbs": [
       "Workshop material",
-      "Introduction to R"
+      "Day 1 - Introduction to R"
     ]
   },
   {
@@ -934,5 +934,26 @@
       "Overview",
       "Schedule"
     ]
+  },
+  {
+    "objectID": "StratoBayes.html",
+    "href": "StratoBayes.html",
+    "title": "Day 2 - StratoBayes",
+    "section": "",
+    "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download."
+  },
+  {
+    "objectID": "StratoBayes.html#bayes-theorem-and-mcmc",
+    "href": "StratoBayes.html#bayes-theorem-and-mcmc",
+    "title": "Day 2 - StratoBayes",
+    "section": "Bayes theorem and MCMC",
+    "text": "Bayes theorem and MCMC\nWorksheet for the session:\nR script bvn_gibbs.R\nR script bimodal_walker.R"
+  },
+  {
+    "objectID": "StratoBayes.html#stratobayes-tutorial",
+    "href": "StratoBayes.html#stratobayes-tutorial",
+    "title": "Day 2 - StratoBayes",
+    "section": "StratoBayes tutorial",
+    "text": "StratoBayes tutorial"
   }
 ]
