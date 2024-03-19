@@ -19,6 +19,7 @@ website:
       - section: "Workshop material"
         contents:
           - introduction-to-R.qmd
+          - StratoBayes.qmd
       - section: "Logistics"
         contents:
           - getting-here.qmd
