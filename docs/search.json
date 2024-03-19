@@ -26,66 +26,42 @@
     "href": "introduction-to-R.html",
     "title": "Day 1 - Introduction to R",
     "section": "",
-    "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download.",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download."
   },
   {
     "objectID": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
     "href": "introduction-to-R.html#session-1---introduction-to-r-and-rstudio",
     "title": "Day 1 - Introduction to R",
     "section": "Session 1 - Introduction to R and RStudio",
-    "text": "Session 1 - Introduction to R and RStudio\nWorksheet for Session 1",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "Session 1 - Introduction to R and RStudio\nWorksheet for Session 1"
   },
   {
     "objectID": "introduction-to-R.html#session-2---handling-data-import-and-manipulation",
     "href": "introduction-to-R.html#session-2---handling-data-import-and-manipulation",
     "title": "Day 1 - Introduction to R",
     "section": "Session 2 - Handling data: import and manipulation",
-    "text": "Session 2 - Handling data: import and manipulation\nWorksheet for Session 2",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "Session 2 - Handling data: import and manipulation\nWorksheet for Session 2"
   },
   {
     "objectID": "introduction-to-R.html#session-3---visualising-and-describing-data",
     "href": "introduction-to-R.html#session-3---visualising-and-describing-data",
     "title": "Day 1 - Introduction to R",
     "section": "Session 3 - Visualising and describing data",
-    "text": "Session 3 - Visualising and describing data\nWorksheet for Session 3",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "Session 3 - Visualising and describing data\nWorksheet for Session 3"
   },
   {
     "objectID": "introduction-to-R.html#session-4---writing-functions-in-r",
     "href": "introduction-to-R.html#session-4---writing-functions-in-r",
     "title": "Day 1 - Introduction to R",
     "section": "Session 4 - Writing functions in R",
-    "text": "Session 4 - Writing functions in R\nWorksheet for Session 4 The worksheet is the file Session 4 Functions.html.",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "Session 4 - Writing functions in R\nWorksheet for Session 4 The worksheet is the file Session 4 Functions.html."
   },
   {
     "objectID": "introduction-to-R.html#data-and-r-scripts",
     "href": "introduction-to-R.html#data-and-r-scripts",
     "title": "Day 1 - Introduction to R",
     "section": "Data and R scripts",
-    "text": "Data and R scripts\nThe data and R scripts for the sessions are found here: Data and R scripts",
-    "crumbs": [
-      "Workshop material",
-      "Day 1 - Introduction to R"
-    ]
+    "text": "Data and R scripts\nThe data and R scripts for the sessions are found here: Data and R scripts"
   },
   {
     "objectID": "getting-here.html",
@@ -313,7 +289,7 @@
     "href": "files/Session-4-Functions/functions.html#trycatch",
     "title": "Writing functions in R",
     "section": "tryCatch",
-    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] 0.9892008 0.9892008"
+    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] 1.403862 1.403862"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#traceback",
@@ -369,14 +345,14 @@
     "href": "files/Session-4-Functions/functions.html#measuring-performance",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.01    0.00    0.04"
+    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.05    0.00    0.04"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "href": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min     lq     mean  median      uq    max neval\n  rnorm(10^4) 316.8 349.05  530.578  399.45  729.30 1358.2   100\n rlnorm(10^4) 848.1 890.25 1348.843 1067.95 1851.95 2594.7   100"
+    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min     lq     mean median     uq    max neval\n  rnorm(10^4) 478.8 492.20  502.689 499.70  504.5  699.7   100\n rlnorm(10^4) 971.2 980.65 1003.181 997.65 1001.3 1315.7   100"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#profiling",
@@ -404,7 +380,7 @@
     "href": "files/Session-4-Functions/functions.html#memory-allocation-1",
     "title": "Writing functions in R",
     "section": "Memory allocation",
-    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_1(data) 1500 1600 5088.0   1700 1900 2948500  1000\n is_six_2(data)  900 1100 4241.2   1100 1300 2922000  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
+    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_1(data) 1400 1500 3708.3   1600 1700 2063700  1000\n is_six_2(data)  900 1000 3598.3   1100 1100 2461200  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation",
@@ -418,14 +394,14 @@
     "href": "files/Session-4-Functions/functions.html#vectorisation-1",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 2500 2900 9252.9   3100 3200 5816200  1000\n is_six_3(data)  700  800 2609.0    900  900 1656200  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
+    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr min   lq   mean median   uq     max neval\n is_six_2(data) 900 1000 3301.2   1000 1100 2238700  1000\n is_six_3(data) 200  200 1181.1    300  300  888300  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation-2",
     "href": "files/Session-4-Functions/functions.html#vectorisation-2",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min     lq     mean median    uq     max neval\n apply(data, 2, sum) 149.0 188.95 326.5335 247.95 339.3 15563.1  1000\n       colSums(data)   6.9   8.20  12.0752   9.25  13.2   117.4  1000"
+    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min    lq     mean median    uq    max neval\n apply(data, 2, sum) 134.8 189.4 215.7673  196.3 202.0 8082.6  1000\n       colSums(data)   7.0   7.5  16.5181    8.5   9.1 7845.2  1000"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#rcpp",
@@ -955,5 +931,12 @@
     "title": "Day 2 - StratoBayes",
     "section": "StratoBayes tutorial",
     "text": "StratoBayes tutorial"
+  },
+  {
+    "objectID": "day-2.html",
+    "href": "day-2.html",
+    "title": "Day 2 - StratoBayes introduction",
+    "section": "",
+    "text": "Workshop participants can install the workshop version of StratoBayes using\ninstall.packages(\"StratoBayes\", repos = \"https://ms609.github.io/packages\")\nR verison 4.3 or above is required."
   }
 ]
