@@ -195,6 +195,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Day 2 - StratoBayes</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 3 - Working with your own datasets</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -272,15 +278,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="stratobayes-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="stratobayes-tutorial">StratoBayes tutorial</h2>
-<p>Workshop participants can install the workshop version of StratoBayes by first running</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"RcppEigen"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>and then installing StratoBayes with:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"StratoBayes"</span>, <span class="at">repos =</span> <span class="st">"https://ms609.github.io/packages"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Workshop participants can install the workshop version of StratoBayes by running:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"StratoBayes"</span>, <span class="at">repos =</span> <span class="fu">c</span>(<span class="fu">getOption</span>(<span class="st">"repos"</span>), <span class="st">"https://ms609.github.io/packages"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>R version 4.3 or above is required.</p>
 <p>The Zip folder that contains the data and worksheets for the tutorial can be downloaded here: <a href="https://github.com/StratoBayes/StratoBayes.github.io/blob/d4d3c8dc40d35f757e98b4700ba64014dc5f72d7/files/StratoBayesTutorial.zip">StratoBayes Tutorial</a></p>
 <p>Extract the files in a folder and set your R working directory to that folder using the <code>setwd</code> function. The worksheets are called <code>StratoBayes_1_Correlation.html</code> and <code>StratoBayes_2_AgeModel.html</code>. There are corresponding <code>StratoBayes_1_Correlation.qmd</code> and <code>StratoBayes_2_AgeModel.qmd</code> files that you can open with R.</p>
 <p>If you have <code>StratoBayes</code> and the dependencies installed, you should be able to run the code blocks by clicking the green arrows in the <code>.qmd</code> files. You will need to run them in order, i.e.&nbsp;code blocks further down the document may not run if you haven’t run the previous code blocks. When you are working within these <code>.qmd</code> files, your working directory will be the folder where the <code>.qmd</code> file is saved.</p>
-<p>Alternatively, you can copy the code blocks from the worksheets or the <code>.qmd</code> to your own R script. Beware that will you probably have to adapt the file paths or working directory.</p>
+<p>Alternatively, you can copy the code blocks from the worksheets or the <code>.qmd</code> to your own R script. Beware that you may have to adapt the file paths or working directory.</p>
 
 
 </section>

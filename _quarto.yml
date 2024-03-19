@@ -20,6 +20,7 @@ website:
         contents:
           - introduction-to-R.qmd
           - StratoBayes.qmd
+          - Day3.qmd
       - section: "Logistics"
         contents:
           - getting-here.qmd

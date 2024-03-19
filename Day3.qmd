@@ -1,0 +1,19 @@
+---
+title: "Day 3 - Working with your own datasets"
+---
+
+If you don't have a dataset you would like to work with, you can use a carbon isotope data set with radiometric dates from Morocco and Siberia. The spreadsheets and the papers from which the data were taken are in the Zip folder:
+
+[Morocco_Siberia](https://github.com/StratoBayes/StratoBayes.github.io/blob/06430fc94e161ee0026b857c1fc5dbb47b28316c/files/Morocco_Siberia.zip)
+
+Some approaches you could try:
+
+-   Start by correlating just two sections on the height scale
+
+-   You could also start with correlating just some parts of sections, discarding the rest of the data
+
+-   Simplify the lithology data - does it make sense to assume that the same lithology at the bottom and top of a long section had the same sedimentation rate, or do you want to split the data differently?
+
+-   Are there any unconformities? For example, add a gap at the sequence boundary between the Sukharika and Krasnoporog formations in the Siberian section
+
+-   Try a correlation on the age scale, using the radiometric ages

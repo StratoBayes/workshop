@@ -26,7 +26,7 @@
     "href": "StratoBayes.html#stratobayes-tutorial",
     "title": "Day 2 - StratoBayes",
     "section": "StratoBayes tutorial",
-    "text": "StratoBayes tutorial\nWorkshop participants can install the workshop version of StratoBayes by first running\ninstall.packages(\"RcppEigen\")\nand then installing StratoBayes with:\ninstall.packages(\"StratoBayes\", repos = \"https://ms609.github.io/packages\")\nR version 4.3 or above is required.\nThe Zip folder that contains the data and worksheets for the tutorial can be downloaded here: StratoBayes Tutorial\nExtract the files in a folder and set your R working directory to that folder using the setwd function. The worksheets are called StratoBayes_1_Correlation.html and StratoBayes_2_AgeModel.html. There are corresponding StratoBayes_1_Correlation.qmd and StratoBayes_2_AgeModel.qmd files that you can open with R.\nIf you have StratoBayes and the dependencies installed, you should be able to run the code blocks by clicking the green arrows in the .qmd files. You will need to run them in order, i.e. code blocks further down the document may not run if you haven’t run the previous code blocks. When you are working within these .qmd files, your working directory will be the folder where the .qmd file is saved.\nAlternatively, you can copy the code blocks from the worksheets or the .qmd to your own R script. Beware that will you probably have to adapt the file paths or working directory.",
+    "text": "StratoBayes tutorial\nWorkshop participants can install the workshop version of StratoBayes by running:\ninstall.packages(\"StratoBayes\", repos = c(getOption(\"repos\"), \"https://ms609.github.io/packages\"))\nR version 4.3 or above is required.\nThe Zip folder that contains the data and worksheets for the tutorial can be downloaded here: StratoBayes Tutorial\nExtract the files in a folder and set your R working directory to that folder using the setwd function. The worksheets are called StratoBayes_1_Correlation.html and StratoBayes_2_AgeModel.html. There are corresponding StratoBayes_1_Correlation.qmd and StratoBayes_2_AgeModel.qmd files that you can open with R.\nIf you have StratoBayes and the dependencies installed, you should be able to run the code blocks by clicking the green arrows in the .qmd files. You will need to run them in order, i.e. code blocks further down the document may not run if you haven’t run the previous code blocks. When you are working within these .qmd files, your working directory will be the folder where the .qmd file is saved.\nAlternatively, you can copy the code blocks from the worksheets or the .qmd to your own R script. Beware that you may have to adapt the file paths or working directory.",
     "crumbs": [
       "Workshop material",
       "Day 2 - StratoBayes"
@@ -139,6 +139,17 @@
     "crumbs": [
       "Logistics",
       "Catering"
+    ]
+  },
+  {
+    "objectID": "Day3.html",
+    "href": "Day3.html",
+    "title": "Day 3 - Working with your own datasets",
+    "section": "",
+    "text": "If you don’t have a dataset you would like to work with, you can use a carbon isotope data set with radiometric dates from Morocco and Siberia. The spreadsheets and the papers from which the data were taken are in the Zip folder:\nMorocco_Siberia\nSome approaches you could try:\n\nStart by correlating just two sections on the height scale\nYou could also start with correlating just some parts of sections, discarding the rest of the data\nSimplify the lithology data - does it make sense to assume that the same lithology at the bottom and top of a long section had the same sedimentation rate, or do you want to split the data differently?\nAre there any unconformities? For example, add a gap at the sequence boundary between the Sukharika and Krasnoporog formations in the Siberian section\nTry a correlation on the age scale, using the radiometric ages",
+    "crumbs": [
+      "Workshop material",
+      "Day 3 - Working with your own datasets"
     ]
   },
   {
@@ -356,7 +367,7 @@
     "href": "files/Session-4-Functions/index.html#trycatch",
     "title": "Writing functions in R",
     "section": "tryCatch",
-    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] 0.8933425 0.8933425"
+    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] -0.09196503 -0.09196503"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#traceback",
@@ -412,14 +423,14 @@
     "href": "files/Session-4-Functions/index.html#measuring-performance",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.01    0.00    0.06"
+    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.02    0.00    0.06"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#measuring-performance-1",
     "href": "files/Session-4-Functions/index.html#measuring-performance-1",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min      lq     mean  median      uq    max neval\n  rnorm(10^4) 336.5  372.50  554.693  468.70  670.10 1503.5   100\n rlnorm(10^4) 856.2 1032.95 1393.893 1209.65 1525.75 3652.6   100"
+    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr    min      lq     mean  median     uq    max neval\n  rnorm(10^4)  420.4  471.15  646.696  560.85  805.1 1524.8   100\n rlnorm(10^4) 1124.7 1182.05 1594.604 1454.85 2018.0 2476.0   100"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#profiling",
@@ -447,7 +458,7 @@
     "href": "files/Session-4-Functions/index.html#memory-allocation-1",
     "title": "Writing functions in R",
     "section": "Memory allocation",
-    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq    mean median  uq    max neval\n is_six_1(data) 2.1 2.5  9.5574    4.7 5.1 4774.6  1000\n is_six_2(data) 1.3 1.6 10.3224    3.2 3.5 7095.0  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
+    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq   mean median uq    max neval\n is_six_1(data) 1.9 2.2 8.1990    2.6  3 4615.3  1000\n is_six_2(data) 1.2 1.6 5.8303    1.7  2 3371.0  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
   },
   {
     "objectID": "files/Session-4-Functions/index.html#vectorisation",
@@ -461,14 +472,14 @@
     "href": "files/Session-4-Functions/index.html#vectorisation-1",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr min   lq   mean median   uq     max neval\n is_six_2(data) 900 1000 3813.4   1100 1200 2398900  1000\n is_six_3(data) 100  200 1150.1    300  300  696600  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
+    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 1100 1300 4098.3   1300 1400 2652800  1000\n is_six_3(data)  200  300 1431.0    300  400 1054000  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
   },
   {
     "objectID": "files/Session-4-Functions/index.html#vectorisation-2",
     "href": "files/Session-4-Functions/index.html#vectorisation-2",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min    lq     mean median     uq     max neval\n apply(data, 2, sum) 151.0 237.1 421.2535 321.40 434.25 19911.5  1000\n       colSums(data)   7.2   8.9  15.8846  12.15  19.00   200.1  1000"
+    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min     lq     mean median     uq     max neval\n apply(data, 2, sum) 172.8 235.45 378.2109 310.45 401.85 14354.4  1000\n       colSums(data)   8.8   9.70  14.4721  11.50  16.60   120.8  1000"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#rcpp",
@@ -720,7 +731,7 @@
     "href": "files/Session-4-Functions/functions.html#trycatch",
     "title": "Writing functions in R",
     "section": "tryCatch",
-    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] -0.8440644 -0.8440644"
+    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] 0.7173393 0.7173393"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#traceback",
@@ -776,14 +787,14 @@
     "href": "files/Session-4-Functions/functions.html#measuring-performance",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.03    0.00    0.04"
+    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.02    0.00    0.06"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "href": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min     lq     mean  median     uq    max neval\n  rnorm(10^4) 335.7 375.45  560.074  466.50  741.0 1312.0   100\n rlnorm(10^4) 857.9 888.85 1380.964 1160.75 1745.3 2769.3   100"
+    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr    min     lq     mean  median      uq    max neval\n  rnorm(10^4)  442.2  472.5  673.620  620.40  818.40 1444.6   100\n rlnorm(10^4) 1144.2 1165.4 1646.834 1375.15 2010.25 3677.7   100"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#profiling",
@@ -811,7 +822,7 @@
     "href": "files/Session-4-Functions/functions.html#memory-allocation-1",
     "title": "Writing functions in R",
     "section": "Memory allocation",
-    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq   mean median  uq    max neval\n is_six_1(data) 1.7 1.9 5.9275    2.0 2.1 3789.6  1000\n is_six_2(data) 1.1 1.2 4.9778    1.3 1.4 3596.9  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
+    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq   mean median  uq    max neval\n is_six_1(data) 1.8 1.9 5.1027    2.0 2.2 2709.5  1000\n is_six_2(data) 1.1 1.3 4.0414    1.3 1.5 2489.1  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation",
@@ -825,14 +836,14 @@
     "href": "files/Session-4-Functions/functions.html#vectorisation-1",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 1000 1100 6887.6   2400 2700 4676600  1000\n is_six_3(data)  200  300 2281.5    400  800 1668500  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
+    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 1200 1300 5947.8   1400 1500 4468700  1000\n is_six_3(data)  200  300 1392.5    400  400  985400  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation-2",
     "href": "files/Session-4-Functions/functions.html#vectorisation-2",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min     lq     mean median    uq     max neval\n apply(data, 2, sum) 143.9 204.65 357.1885 262.25 370.0 17715.0  1000\n       colSums(data)   6.5   8.40  14.0961  10.10  15.3   263.2  1000"
+    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min    lq     mean median     uq     max neval\n apply(data, 2, sum) 183.2 213.7 349.9197 282.55 350.65 16322.6  1000\n       colSums(data)   8.7   9.4  12.6065  10.10  13.50   193.3  1000"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#rcpp",
