@@ -14,7 +14,13 @@ The files are hosted on the StratoBayes.github.io Github repository. Download th
 
 ## StratoBayes tutorial
 
-Workshop participants can install the workshop version of StratoBayes using
+Workshop participants can install the workshop version of StratoBayes by first running
+
+``` r
+install.packages("RcppEigen")
+```
+
+and then installing StratoBayes with:
 
 ``` r
 install.packages("StratoBayes", repos = "https://ms609.github.io/packages")
