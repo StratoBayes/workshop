@@ -12,5 +12,13 @@ The files are hosted on the StratoBayes.github.io Github repository. Download th
 
 [R script bimodal_walker.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bimodal_walker.R)
 
-
 ## StratoBayes tutorial
+
+Workshop participants can install the workshop version of StratoBayes using
+
+``` r
+install.packages("StratoBayes", repos = "https://ms609.github.io/packages")
+```
+
+R verison 4.3 or above is required.
+
