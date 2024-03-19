@@ -20,5 +20,5 @@ Workshop participants can install the workshop version of StratoBayes using
 install.packages("StratoBayes", repos = "https://ms609.github.io/packages")
 ```
 
-R verison 4.3 or above is required.
+R version 4.3 or above is required.
 
