@@ -22,5 +22,5 @@ It would be helpful to install necessary packages by typing the following comman
 install.packages(c(
   "cli", "coda", "doParallel", "EnvStats", "fda", "foreach",
   "dbscan", "mcmcse", "msm", "mvnfast", "protoclust", "Rcpp",
-  "Rdpack", "Rfast"))
+  "RcppEigen", "Rdpack", "Rfast"))
 ```

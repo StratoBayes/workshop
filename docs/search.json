@@ -124,7 +124,7 @@
     "href": "index.html#installation",
     "title": "StratoBayes workshop",
     "section": "Installation",
-    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.\nIt would be helpful to install necessary packages by typing the following command into the R console:\ninstall.packages(c(\n  \"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\", \"foreach\",\n  \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\", \"protoclust\", \"Rcpp\",\n  \"Rdpack\", \"Rfast\"))",
+    "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.\nIt would be helpful to install necessary packages by typing the following command into the R console:\ninstall.packages(c(\n  \"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\", \"foreach\",\n  \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\", \"protoclust\", \"Rcpp\",\n  \"RcppEigen\", \"Rdpack\", \"Rfast\"))",
     "crumbs": [
       "Overview",
       "StratoBayes workshop"
