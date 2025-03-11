@@ -1,9 +1,0 @@
-# Getting here
-
-The workshop takes place in Durham's historic city centre, 20 minutes&rsquo; walk from the train station. Sessions will be held in the Tristram Room at St. John's college:
-![](images/location.png){width="100%"}
-
-Durham can be reached by train in three hours from London, and two hours from Manchester or Edinburgh. The nearest airport is Newcastle Airport, which can be reached by public transport from Durham in one hour. Participants coming by car should contact us so we can arrange parking spaces with Durham University.
-
-
-![](images/uk-location.jpg){width="75%"}

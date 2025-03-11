@@ -8,24 +8,9 @@ website:
   sidebar:
     style: "docked"
     search: true
-    logo: "images/logo-3.png"
+    logo: "images/logo-2.png"
     contents:
-      - section: "Overview"
-        contents:
-          - index.qmd
-          - sign-up.qmd
-          - schedule.qmd
-          - organising-team.qmd
-      - section: "Workshop material"
-        contents:
-          - introduction-to-R.qmd
-          - StratoBayes.qmd
-          - Day3.qmd
-      - section: "Logistics"
-        contents:
-          - getting-here.qmd
-          - food-and-drinks.qmd
-      - leisure.qmd
+      - index.qmd
       # - section: "Content"
         # contents:
         #   - day1.qmd

@@ -1,26 +1,22 @@
 ---
-title: "StratoBayes workshop"
+title: "StratoBayes"
 ---
 
-**18^th^ -- 20^th^ March 2024, Durham, UK**
+**Automated stratigraphic correlation and age modelling**
 
 ## About
 
-Welcome to the **StratoBayes workshop**. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data.
-
-## Requirements
-
-This event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don't have stratigraphic data of their own.
+Introduce the software
 
 ## Installation
 
-[R](https://www.r-project.org/) and [Rstudio](https://posit.co/downloads/) need to be installed on the participants' laptops.
+### Windows
 
-It would be helpful to install necessary packages by typing the following command into the R console:
+### macOS
 
-``` r
-install.packages(c(
-  "cli", "coda", "doParallel", "EnvStats", "fda", "foreach",
-  "dbscan", "mcmcse", "msm", "mvnfast", "protoclust", "Rcpp",
-  "RcppEigen", "Rdpack", "Rfast"))
-```
+### Linux/Unix
+
+[R](https://www.r-project.org/) and [Rstudio](https://posit.co/downloads/) need to be installed  laptops.
+
+
+## Using StratoBayes
