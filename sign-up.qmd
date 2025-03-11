@@ -1,0 +1,21 @@
+# Sign-up
+
+Sign-up for the workshop has now closed.
+
+```{=html}
+<!--
+**Please register your interest using the following form:** [StratoBayes workshop registration](https://docs.google.com/forms/d/e/1FAIpQLSdWItzkHWuQeai-I6QGSJ2huJTuRuhE5zmxF4BX9n2Cahjsig/viewform)
+
+The workshop fee is £120 for all three days, and £100 for the day two and three only (both include the icebreaker at 5pm on day 1).
+
+<!--**Early bird registration fees (by 25th February)** are £100 (three days) or £80 (two days).-->
+```
+We have emailed payment details and confirmation messages to all registered participants.
+
+In preparation for the workshop, it would be helpful to install a recent version of **R** (<https://www.r-project.org/>) and **Rstudio** ([RStudio Desktop - Posit](https://posit.co/download/rstudio-desktop/)). Typing the following command into the R console will install the packages necessary to run StratoBayes on day 2:
+
+``` r
+install.packages(c("cli", "coda", "doParallel", "EnvStats", "fda",
+                   "foreach", "dbscan", "mcmcse", "msm", "mvnfast",
+                   "protoclust", "Rcpp", "Rdpack", "Rfast"))
+```

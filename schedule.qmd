@@ -1,0 +1,55 @@
+---
+title: "Schedule"
+---
+
+## Day 1 -- Introduction to R -- [18<sup>th</sup> March]{style="font-size: 100%;"} (optional)
+
+| Time        | Activity                               |
+|-------------|----------------------------------------|
+| 09:00-10:30 | Introduction to R and RStudio          |
+| 10:30-11:00 | Coffee Break                           |
+| 11:00-12:30 | Handling data: import and manipulation |
+| 12:30-13:30 | Lunch Break                            |
+| 13:30-15:00 | Visualising and describing data        |
+| 15:00-15:30 | Coffee Break                           |
+| 15:30-17:00 | Writing functions                      |
+| 17:00-18:30 | Icebreaker                             |
+| 19:00       | Dinner                                 |
+
+## Day 2 -- StratoBayes: Correlation and age modelling -- [19<sup>th</sup> March]{style="font-size: 100%;"}
+
+| Time        | Activity                                     |
+|-------------|----------------------------------------------|
+| 09:00-09:15 | Welcome and introductions                    |
+| 09:15-09:45 | Background on StratoBayes                    |
+| 09:45-10:45 | Bayes theorem and MCMC                       |
+| 10:45-11:15 | Coffee Break                                 |
+| 11:15-12:30 | Stratigraphic correlation and age modelling  |
+| 12:30-13:30 | Lunch Break                                  |
+| 13:30-15:30 | Correlation with the StratoBayes R package   |
+| 15:00-15:30 | Coffee Break                                 |
+| 15:30-17:30 | Age modelling with the StratoBayes R package |
+
+## Day 3 -- Delegate project work -- [20<sup>th</sup> March]{style="font-size: 100%;"}
+
+| Time        | Activity                              |
+|-------------|---------------------------------------|
+| 09:00-09:45 | Participants introduce their projects |
+| 09:45-10:30 | Individual project work               |
+| 10:30-11:00 | Coffee break                          |
+| 10:30-12:30 | Individual project work               |
+| 12:30-13:30 | Lunch Break                           |
+| 13:30-13:45 | Quick updates on progress             |
+| 13:45-15:00 | Individual project work               |
+| 15:00-15:30 | Coffee Break                          |
+| 15:30-16:30 | Finalising individual project work    |
+| 16:30-17:30 | Presenting & discussing results       |
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  let tables = document.querySelectorAll('table');
+  tables.forEach(table => table.classList.add('table-schedule'));
+});
+</script>
+```

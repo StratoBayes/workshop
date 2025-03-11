@@ -1,0 +1,32 @@
+/* Targeting standard Quarto code blocks */
+pre.sourceCode,
+/* Targeting your custom HTML code blocks */
+pre > code {
+    font-size: 14pt; /* or whatever size matches your regular code chunks */
+    font-family: "Courier New", Courier, monospace; /* or whatever font you prefer */
+      line-height: 1.1; /* Adjust the line height value as needed */
+}
+
+.small-code pre {
+    font-size: 0.8em;
+}
+
+.func-name {
+    color: cornflowerblue;
+}
+
+.func-args {
+    color: green;
+}
+
+.func-body {
+    color: darkorange;
+}
+/* Targeting subheadings (## Subheading) */
+h2 {
+    font-size: 20pt;
+}
+/* Targeting regular text */
+body {
+    font-size: 14pt;
+}

@@ -1,0 +1,31 @@
+---
+title: "Day 2 - StratoBayes"
+---
+
+The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (`...`) in the top right corner, and select `Download`.
+
+## Bayes theorem and MCMC
+
+[Worksheet for the session:](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/Bayes%20theorem%20and%20MCMC.docx)
+
+[R script bvn_gibbs.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bvn_gibbs.R)
+
+[R script bimodal_walker.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bimodal_walker.R)
+
+## StratoBayes tutorial
+
+Workshop participants can install the workshop version of StratoBayes by running:
+
+``` r
+install.packages("StratoBayes", repos = c(getOption("repos"), "https://ms609.github.io/packages"))
+```
+
+R version 4.3 or above is required.
+
+The Zip folder that contains the data and worksheets for the tutorial can be downloaded here: [StratoBayes Tutorial](https://github.com/StratoBayes/StratoBayes.github.io/blob/d4d3c8dc40d35f757e98b4700ba64014dc5f72d7/files/StratoBayesTutorial.zip)
+
+Extract the files in a folder and set your R working directory to that folder using the `setwd` function. The worksheets are called `StratoBayes_1_Correlation.html` and `StratoBayes_2_AgeModel.html`. There are corresponding `StratoBayes_1_Correlation.qmd` and `StratoBayes_2_AgeModel.qmd` files that you can open with R.
+
+If you have `StratoBayes` and the dependencies installed, you should be able to run the code blocks by clicking the green arrows in the `.qmd` files. You will need to run them in order, i.e. code blocks further down the document may not run if you haven't run the previous code blocks. When you are working within these `.qmd` files, your working directory will be the folder where the `.qmd` file is saved.
+
+Alternatively, you can copy the code blocks from the worksheets or the `.qmd` to your own R script. Beware that you may have to adapt the file paths or working directory.
