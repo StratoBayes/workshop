@@ -4,7 +4,7 @@ title: "Day 3 - Working with your own datasets"
 
 If you don't have a dataset you would like to work with, you can use a carbon isotope data set with radiometric dates from Morocco and Siberia. The spreadsheets and the papers from which the data were taken are in the Zip folder:
 
-[Morocco_Siberia](https://github.com/StratoBayes/StratoBayes.github.io/blob/06430fc94e161ee0026b857c1fc5dbb47b28316c/files/Morocco_Siberia.zip)
+[Morocco_Siberia](https://github.com/StratoBayes/workshop/blob/fb6b16bc1bc7f081cb015b526d658d5edad196e4/files/Morocco_Siberia.zip)
 
 Some approaches you could try:
 

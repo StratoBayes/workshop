@@ -6,23 +6,26 @@ The files are hosted on the StratoBayes.github.io Github repository. Download th
 
 ## Bayes theorem and MCMC
 
-[Worksheet for the session:](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/Bayes%20theorem%20and%20MCMC.docx)
+[Worksheet for the session:](https://github.com/StratoBayes/workshop/blob/fb6b16bc1bc7f081cb015b526d658d5edad196e4/files/Bayes%20theorem%20and%20MCMC.docx)
 
-[R script bvn_gibbs.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bvn_gibbs.R)
+[R script bvn_gibbs.R](https://github.com/StratoBayes/workshop/blob/fb6b16bc1bc7f081cb015b526d658d5edad196e4/files/data/bvn_gibbs.R)
 
-[R script bimodal_walker.R](https://github.com/StratoBayes/StratoBayes.github.io/blob/8bde93d167f58eebcfabb4237ca6133904aff536/files/data/bimodal_walker.R)
+[R script bimodal_walker.R](https://github.com/StratoBayes/workshop/blob/fb6b16bc1bc7f081cb015b526d658d5edad196e4/files/data/bimodal_walker.R)
 
 ## StratoBayes tutorial
 
-Workshop participants can install the workshop version of StratoBayes by running:
+R version 4.3 or above is required.
+
+**Edit:** Users should refer to [stratobayes.github.io/software](https://stratobayes.github.io/software) for up-to-date installation instructions of R, Rstudio and the StratoBayes R package.
+
+<!-- Workshop participants can install the workshop version of StratoBayes by running:
 
 ``` r
 install.packages("StratoBayes", repos = c(getOption("repos"), "https://ms609.github.io/packages"))
 ```
+-->
 
-R version 4.3 or above is required.
-
-The Zip folder that contains the data and worksheets for the tutorial can be downloaded here: [StratoBayes Tutorial](https://github.com/StratoBayes/StratoBayes.github.io/blob/d4d3c8dc40d35f757e98b4700ba64014dc5f72d7/files/StratoBayesTutorial.zip)
+The Zip folder that contains the data and worksheets for the tutorial can be downloaded here: [StratoBayes Tutorial](https://github.com/StratoBayes/workshop/blob/fb6b16bc1bc7f081cb015b526d658d5edad196e4/files/StratoBayesTutorial.zip)
 
 Extract the files in a folder and set your R working directory to that folder using the `setwd` function. The worksheets are called `StratoBayes_1_Correlation.html` and `StratoBayes_2_AgeModel.html`. There are corresponding `StratoBayes_1_Correlation.qmd` and `StratoBayes_2_AgeModel.qmd` files that you can open with R.
 
