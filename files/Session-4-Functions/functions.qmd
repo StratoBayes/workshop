@@ -73,7 +73,7 @@ subtract(2, 1)
 
 ## Why do we need functions
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Readability
 -   Organisation
@@ -83,7 +83,7 @@ subtract(2, 1)
 -   Modularity
 -   Reusability
 :::
-:::
+:::::
 
 ::: fragment
 Imagine calculating the mean without standard functions like `mean` or `sum`:
@@ -264,17 +264,25 @@ just_return(2, 1)
 :::
 
 ## Exercise 1a - Building a function
+
 Write a function that adds two values and creates a scatter plot with first value on the x-axis and the result on the y axis.
 
 ### Hint
+
 <details>
-  <summary>Click to expand/collapse</summary>
-First, we add the two values and save it in an object within the function. Then, we use the `plot` function to create a scatter plot with `x` being the first value, and `y` being the object we created with the addtion. 
+
+<summary>Click to expand/collapse</summary>
+
+First, we add the two values and save it in an object within the function. Then, we use the `plot` function to create a scatter plot with `x` being the first value, and `y` being the object we created with the addtion.
+
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 add_and_plot <- function(a, b) {
   result <- a + b
@@ -282,21 +290,29 @@ add_and_plot <- function(a, b) {
 }
 
 ```
+
 </details>
 
-
 ## Exercise 1b - Expanding a function
+
 Expand the function you just created to let it return the result after plotting
 
 ### Hint
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 We can place the object we want to return at the end of our function, or use the `return` function.
+
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 add_and_plot <- function(a, b) {
   result <- a + b
@@ -304,20 +320,29 @@ add_and_plot <- function(a, b) {
   result
 }
 ```
+
 </details>
 
 ## Exercise 1c - Passing additional arguments
+
 Expand the function further by allowing customisation of the plot by changing graphical parameters.
 
 ### Hint
+
 <details>
-  <summary>Click to expand/collapse</summary>
-We can use ellipsis (`...`) as a function argument in the outer and the inner function to allow for additional arguments being passed. 
+
+<summary>Click to expand/collapse</summary>
+
+We can use ellipsis (`...`) as a function argument in the outer and the inner function to allow for additional arguments being passed.
+
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 add_and_plot <- function(a, b, ...) {
   result <- a + b
@@ -325,15 +350,15 @@ add_and_plot <- function(a, b, ...) {
   result
 }
 ```
-</details>
 
+</details>
 
 # Binary operators
 
 ## Binary operators
 
-::: columns
-::: {.column width="50%"}
+::::::: columns
+:::: {.column width="50%"}
 ::: fragment
 Standard function syntax:
 
@@ -341,9 +366,9 @@ Standard function syntax:
 sum(c(1,2))
 ```
 :::
-:::
+::::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: fragment
 Operator syntax:
 
@@ -351,24 +376,24 @@ Operator syntax:
 1 + 2
 ```
 :::
-:::
-:::
+::::
+:::::::
 
-::: columns
-::: {.column width="50%"}
+::::::: columns
+:::: {.column width="50%"}
 ::: fragment
 Most binary operators come in `%`:
 :::
-:::
+::::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: fragment
 ```{r}
 3 %in% c(1,2,3)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 <br>
 
@@ -530,8 +555,9 @@ add_until_4(1)
 :::
 
 ## Exercise 2a - Building a loop
-Create a for loop that calculates the mean of all numerical columns of the `Talat_isotopes` dataset.
-If the dataset is not already loaded, we can read it with: 
+
+Create a for loop that calculates the mean of all numerical columns of the `Talat_isotopes` dataset. If the dataset is not already loaded, we can read it with:
+
 ```{r}
 # read the "Talat_n_Yissi_isotopes.csv" from session 3:
 Talat_isotopes <- read.csv("data/Talat_n_Yissi_isotopes.csv", 
@@ -539,24 +565,35 @@ Talat_isotopes <- read.csv("data/Talat_n_Yissi_isotopes.csv",
 ```
 
 ### Hint 1
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 To check if a column is numeric, we can use `is.numeric` on the column. Using `if` and possibly `else` allows us to do different operations depending on the outcome of `is.numeric`.
 
 Selecting a column can be done with square brackets, e.g. `Talat_isotopes[ ,1]` selects the first column.
 
 To get the number of columns of `Talat_isotopes`, we can use the `ncol` function.
+
 </details>
 
 ### Hint 2
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 Start a loop for example with `for (i in seq_len(ncol(Talat_isotopes))) { }` to run it for one iteration per number of columns. Everything inside the curly brackets is done exactly the same in each iteration, except `i` changes. To print the output at every iteration of the function, we can use the `print` function.
+
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 # save number of columns
 nCol <- ncol(Talat_isotopes)
@@ -567,20 +604,29 @@ for (i in seq_len(nCol)) {
   }
 }
 ```
+
 </details>
 
 ## Exercise 2b - Turn the loop into a function
-From the loop created in exercise 1, create a function that takes the `Talat_isotopes` dataframe (or any other dataframe) as input and returns the means of numerical columns as output. 
+
+From the loop created in exercise 1, create a function that takes the `Talat_isotopes` dataframe (or any other dataframe) as input and returns the means of numerical columns as output.
 
 ### Hint
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 We can return the output by saving the result of every iteration of the loop in an object, and then return that object. We can omit `NA` output by indexing with `!is.na`.
+
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 numericColumnMean <- function(df) {
   # save number of columns
@@ -601,8 +647,8 @@ numericColumnMean <- function(df) {
 # apply function
 numericColumnMean(Talat_isotopes)
 ```
-</details>
 
+</details>
 
 # Apply and similar functions
 
@@ -678,7 +724,7 @@ sapply(data, mean)
 ::: {style="margin-top: 1.25em;"}
 :::
 
-::: fragment
+:::: fragment
 ```{r}
 data <- list(c(1, 2, 3), c(4, 5))
 vapply(data, FUN = mean, FUN.VALUE = numeric(1))
@@ -688,7 +734,7 @@ vapply(data, FUN = mean, FUN.VALUE = numeric(1))
 :::
 
 Here, we specified in FUN.VALUE that each element of the output should be a numeric of length 1.
-:::
+::::
 
 ## Exercise 3a - Use apply to calculate column means
 
@@ -704,31 +750,37 @@ Talat_numeric <- Talat_isotopes[ ,numeric_columns]
 ```
 
 ### Hint 1
-<details>
-  <summary>Click to expand/collapse</summary>
 
-The second argument of `apply`, `MAR`, needs to be set to `2` for columnwise operations. 
+<details>
+
+<summary>Click to expand/collapse</summary>
+
+The second argument of `apply`, `MAR`, needs to be set to `2` for columnwise operations.
 
 In the third argument, we can define a function, for example `function(col) { }` will modify each column according to the instructions in curly brackets, refering to the column as `col`.
 
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 ```{r}
 apply(Talat_numeric, 2, function (col) {
   mean(col)
   }
 )
 ```
+
 Or simply:
+
 ```{r}
 apply(Talat_numeric, 2, mean)
 ```
 
 </details>
-
 
 ## Exercise 3b - Reading a messy dataset
 
@@ -736,9 +788,10 @@ The Talat_isotopes and Talat_elements datasets are contained in a mulit-sheet Ex
 
 Reading such files with R can be a challenge and it is often easier to copy-paste the relevant data into clean spreadsheets and save them as .csv files.
 
-However, here we try to automate the reading of sheets from this particular file, starting from the sheet Morocco-Talat n' Yissi`.
+However, here we try to automate the reading of sheets from this particular file, starting from the sheet Morocco-Talat n' Yissi\`.
 
 We start by installing and loading the `readxl` package.
+
 ```{r}
 # Install and load the readxl package if you haven't already
 if (!require(readxl)) install.packages("readxl")
@@ -747,7 +800,8 @@ library(readxl)
 
 We notice that the `Morocco-Talat n' Yissi` sheet has two header rows, and the formatting is messy.
 
-We read in the header rows of the sheet `4. Morocco-Talat n' Yissi`: 
+We read in the header rows of the sheet `4. Morocco-Talat n' Yissi`:
+
 ```{r}
 # specify the file path
 file_path <- "data/Maloof_et_al_2010_SM.xls"
@@ -761,16 +815,19 @@ header_rows <- read_excel(file_path, sheet = sheet_name, n_max = 2,
 ```
 
 Next, we merge the header rows as we want only a single column name per column:
+
 ```{r}
 column_names <- apply(header_rows, 2, function(x) paste(na.omit(x), collapse = "_"))
 ```
 
 Finally, we use these column names for reading the entire data set, skipping the first two problematic rows:
+
 ```{r}
 talat <- read_excel(file_path, sheet = sheet_name, skip = 2, col_names = column_names)
 ```
 
 The result looks reasonable:
+
 ```{r}
 head(talat[ ,c(1:4)])
 ```
@@ -778,8 +835,11 @@ head(talat[ ,c(1:4)])
 **Exercise:** Can you build a function from the above and apply it to other sheets of the `Maloof_et_al_2010_SM.xls` file? We can also build a second function that uses this function to read multiple sheets at once.
 
 ### Hint
+
 <details>
-  <summary>Click to expand/collapse</summary>
+
+<summary>Click to expand/collapse</summary>
+
 We can almost copy-paste the lines we used to read the sheet earlier and collate them in a function.
 
 We need two arguments: the `file_path`, and the `sheet_index`.
@@ -789,9 +849,13 @@ We need two arguments: the `file_path`, and the `sheet_index`.
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
-  Here is a function that reads a single sheet:
+
+<summary>Click to expand/collapse</summary>
+
+Here is a function that reads a single sheet:
+
 ```{r}
 read_sheets_Maloof <- function(file_path, sheet_index) {
   # read the top two rows
@@ -809,6 +873,7 @@ read_sheets_Maloof <- function(file_path, sheet_index) {
 ```
 
 Using `lapply`, we can build a simple function that uses the previous function to read multiple sheets at once and saves them as a list of dataframes. Here, we use the indices of the sheets, rather than the names, so we don't have to type out the complicated sheet names.
+
 ```{r}
 multi_sheets_Maloof <- function(file_path, sheet_index, 
                                 read_function) {
@@ -820,6 +885,7 @@ multi_sheets_Maloof <- function(file_path, sheet_index,
 ```
 
 From here, you could try to combine the dataframes e.g. using `merge`.
+
 </details>
 
 # Environment and scoping
@@ -883,29 +949,33 @@ double_x(0)
 ```
 :::
 
-::: fragment
+:::: fragment
 `x` is a free variable in the `double_x` function -- it is not supplied to or defined in the function. Instead, it's looked up in the environment where `double_x` was created, the global environment.
 
 ::: {style="margin-top: 1em;"}
 :::
 
 This can get tricky, see here for more details: [bookdown.org/rdpeng/rprogdatascience/scoping-rules-of-r.html](https://bookdown.org/rdpeng/rprogdatascience/scoping-rules-of-r.html)
-:::
+::::
 
 ## Exercise 4 - Use `vapply` to return the three highest d13C values for every stage in `Talat_isotopes`
 
 As a starting point, extract the unique `stage` names from the `Talat_isotopes` dataframe using the `unique` function:
-``` {r}
+
+```{r}
 unique_stages <- unique(Talat_isotopes$stage)
 ```
 
 ### Hint
-<details>
-  <summary>Click to expand/collapse</summary>
 
-We can use this as our first argument to `vapply`, and use `subset` to select only the values of `d13C` that are from a specific stage. 
+<details>
+
+<summary>Click to expand/collapse</summary>
+
+We can use this as our first argument to `vapply`, and use `subset` to select only the values of `d13C` that are from a specific stage.
 
 The `sort` function can be useful to sort the `d13C` values in decreasing order, for example:
+
 ```{r}
 # function to return three largest elements of a vector
 three_largest <- function(x) {
@@ -923,9 +993,13 @@ The third argument of `vapply` needs to specify the class and length of the outp
 </details>
 
 ### Solution
+
 <details>
-  <summary>Click to expand/collapse</summary>
-The first solution takes advantage of R functions being able to find variables that were defined outside the function environment: 
+
+<summary>Click to expand/collapse</summary>
+
+The first solution takes advantage of R functions being able to find variables that were defined outside the function environment:
+
 ```{r}
 # build a custom function for vapply
 three_largest_stages <- function(s) {
@@ -939,16 +1013,16 @@ three_largest_stages <- function(s) {
 vapply(unique_stages, FUN = three_largest_stages, 
        FUN.VALUE = numeric(3))
 ```
+
 `vapply` has returned the output as a matrix.
 
-The function above works because `Talat_isotopes` is accessed from the global environment, but only modified within the  function environment.
+The function above works because `Talat_isotopes` is accessed from the global environment, but only modified within the function environment.
 
 *Caution: This can lead to confusion and it is often better to avoid this.*
 
 A cleaner solution would be to pass `Talat_isotopes` as a second argument to the `three_largest_stages` function.
 
 </details>
-
 
 # Testing and Debugging
 
@@ -1139,7 +1213,6 @@ my_plot(1:3, pch = 17, xlim = c(1, 5),
         main = "user-specified xlim")
 ```
 
-
 ## Measuring performance
 
 If you have large data sets and complex functions, you may want to enhance their performance.
@@ -1221,10 +1294,10 @@ data <- sample.int(6, n = 100, replace = TRUE)
 ```
 :::
 
-::: fragment
+:::::: fragment
 Now, we want to check which ones show "6". Compare these two approaches:
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ```{r}
 is_six_1 <- function(x) {
@@ -1248,8 +1321,8 @@ is_six_2  <- function(x) {
 }
 ```
 :::
-:::
-:::
+:::::
+::::::
 
 ## Memory allocation
 
@@ -1270,10 +1343,10 @@ microbenchmark::microbenchmark(is_six_1(data),
 
 R has many functions that are vectorised. <br>
 
-::: fragment
+:::::: fragment
 Instead of running a loop to check each value of our dice rolls, we can check them all at once by taking advantage of the ability of `==` to take vector input:
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ```{r}
 is_six_2  <- function(x) {
@@ -1293,8 +1366,8 @@ is_six_3 <- function(x) {
 }
 ```
 :::
-:::
-:::
+:::::
+::::::
 
 ## Vectorisation
 

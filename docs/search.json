@@ -6,7 +6,7 @@
     "section": "",
     "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download.",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 2 - StratoBayes"
     ]
   },
@@ -17,7 +17,7 @@
     "section": "Bayes theorem and MCMC",
     "text": "Bayes theorem and MCMC\nWorksheet for the session:\nR script bvn_gibbs.R\nR script bimodal_walker.R",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 2 - StratoBayes"
     ]
   },
@@ -28,7 +28,7 @@
     "section": "StratoBayes tutorial",
     "text": "StratoBayes tutorial\nWorkshop participants can install the workshop version of StratoBayes by running:\ninstall.packages(\"StratoBayes\", repos = c(getOption(\"repos\"), \"https://ms609.github.io/packages\"))\nR version 4.3 or above is required.\nThe Zip folder that contains the data and worksheets for the tutorial can be downloaded here: StratoBayes Tutorial\nExtract the files in a folder and set your R working directory to that folder using the setwd function. The worksheets are called StratoBayes_1_Correlation.html and StratoBayes_2_AgeModel.html. There are corresponding StratoBayes_1_Correlation.qmd and StratoBayes_2_AgeModel.qmd files that you can open with R.\nIf you have StratoBayes and the dependencies installed, you should be able to run the code blocks by clicking the green arrows in the .qmd files. You will need to run them in order, i.e. code blocks further down the document may not run if you haven’t run the previous code blocks. When you are working within these .qmd files, your working directory will be the folder where the .qmd file is saved.\nAlternatively, you can copy the code blocks from the worksheets or the .qmd to your own R script. Beware that you may have to adapt the file paths or working directory.",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 2 - StratoBayes"
     ]
   },
@@ -39,7 +39,7 @@
     "section": "",
     "text": "Time\nActivity\n\n\n\n\n09:00-10:30\nIntroduction to R and RStudio\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:30\nHandling data: import and manipulation\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:00\nVisualising and describing data\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nWriting functions\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Schedule"
     ]
   },
@@ -50,7 +50,7 @@
     "section": "",
     "text": "Time\nActivity\n\n\n\n\n09:00-10:30\nIntroduction to R and RStudio\n\n\n10:30-11:00\nCoffee Break\n\n\n11:00-12:30\nHandling data: import and manipulation\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:00\nVisualising and describing data\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:00\nWriting functions\n\n\n17:00-18:30\nIcebreaker\n\n\n19:00\nDinner",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Schedule"
     ]
   },
@@ -61,7 +61,7 @@
     "section": "Day 2 – StratoBayes: Correlation and age modelling – 19th March",
     "text": "Day 2 – StratoBayes: Correlation and age modelling – 19th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:15\nWelcome and introductions\n\n\n09:15-09:45\nBackground on StratoBayes\n\n\n09:45-10:45\nBayes theorem and MCMC\n\n\n10:45-11:15\nCoffee Break\n\n\n11:15-12:30\nStratigraphic correlation and age modelling\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-15:30\nCorrelation with the StratoBayes R package\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-17:30\nAge modelling with the StratoBayes R package",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Schedule"
     ]
   },
@@ -72,7 +72,7 @@
     "section": "Day 3 – Delegate project work – 20th March",
     "text": "Day 3 – Delegate project work – 20th March\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:45\nParticipants introduce their projects\n\n\n09:45-10:30\nIndividual project work\n\n\n10:30-11:00\nCoffee break\n\n\n10:30-12:30\nIndividual project work\n\n\n12:30-13:30\nLunch Break\n\n\n13:30-13:45\nQuick updates on progress\n\n\n13:45-15:00\nIndividual project work\n\n\n15:00-15:30\nCoffee Break\n\n\n15:30-16:30\nFinalising individual project work\n\n\n16:30-17:30\nPresenting & discussing results",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Schedule"
     ]
   },
@@ -83,6 +83,7 @@
     "section": "",
     "text": "Durham is famous for its mighty cathedral, which forms part of the Durham Castle and Cathedral World Heritage Site. The cathedral can be visited throughout the day, and the cathedral tower (booking required) offers a spectacular view. The historic city centre with its picturesque bridges and forested riverbanks invites for a stroll. Durham University is home to 20,000 students, contributing to a lively ambiance in the town’s many bars and cafes.",
     "crumbs": [
+      "Logistics",
       "Leisure"
     ]
   },
@@ -93,7 +94,7 @@
     "section": "",
     "text": "18th – 20th March 2024, Durham, UK",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "StratoBayes workshop"
     ]
   },
@@ -104,7 +105,7 @@
     "section": "About",
     "text": "About\nWelcome to the StratoBayes workshop. Stratigraphic correlation and age modelling are fundamental for understanding Earth history, the evolution of life and climate, as well as for the extraction of subsurface resources. The StratoBayes R package takes a Bayesian approach to correlating and dating geological data. It automatically aligns geochemical or geophysical signals measured in multiple outcrops or wells, and is able to integrate absolute age constraints such as radiometric dates, providing age-depth models with realistic uncertainty estimates. In this workshop, participants will learn the use of the StratoBayes R package, and are encouraged to build stratigraphic correlations or age models using their own data sets. The workshop includes an optional introduction to R on day one, followed by two days of working with stratigraphic data.",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "StratoBayes workshop"
     ]
   },
@@ -115,7 +116,7 @@
     "section": "Requirements",
     "text": "Requirements\nThis event is open to anyone with an interest in stratigraphic correlation or age modelling. No knowledge of R is required, but participants without prior experience with R should join the introduction to R on day one of the workshop. Participants need to bring a laptop or similar device. Participants are encouraged to bring their own stratigraphic data sets, which will be used on day three. We will have alternative data sets for participants who don’t have stratigraphic data of their own.",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "StratoBayes workshop"
     ]
   },
@@ -126,7 +127,7 @@
     "section": "Installation",
     "text": "Installation\nR and Rstudio need to be installed on the participants’ laptops.\nIt would be helpful to install necessary packages by typing the following command into the R console:\ninstall.packages(c(\n  \"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\", \"foreach\",\n  \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\", \"protoclust\", \"Rcpp\",\n  \"RcppEigen\", \"Rdpack\", \"Rfast\"))",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "StratoBayes workshop"
     ]
   },
@@ -148,7 +149,7 @@
     "section": "",
     "text": "If you don’t have a dataset you would like to work with, you can use a carbon isotope data set with radiometric dates from Morocco and Siberia. The spreadsheets and the papers from which the data were taken are in the Zip folder:\nMorocco_Siberia\nSome approaches you could try:\n\nStart by correlating just two sections on the height scale\nYou could also start with correlating just some parts of sections, discarding the rest of the data\nSimplify the lithology data - does it make sense to assume that the same lithology at the bottom and top of a long section had the same sedimentation rate, or do you want to split the data differently?\nAre there any unconformities? For example, add a gap at the sequence boundary between the Sukharika and Krasnoporog formations in the Siberian section\nTry a correlation on the age scale, using the radiometric ages",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 3 - Working with your own datasets"
     ]
   },
@@ -171,7 +172,7 @@
     "href": "files/Session-4-Functions/index.html#why-do-we-need-functions",
     "title": "Writing functions in R",
     "section": "Why do we need functions",
-    "text": "Why do we need functions\n\n\n\nReadability\nOrganisation\n\n\n\nModularity\nReusability\n\n\n\n\nImagine calculating the mean without standard functions like mean or sum:\n\n\n\n  data &lt;- c(1,2,3)\n  total &lt;- 0\n  count &lt;- 0\n  for (value in data) {\n    total &lt;- total + value\n    count &lt;- count + 1\n  }\n  total/count\n\n[1] 2"
+    "text": "Why do we need functions\n\n\n\nReadability\nOrganisation\n\n\n\nModularity\nReusability\n\n\n\nImagine calculating the mean without standard functions like mean or sum:\n\n\n\n  data &lt;- c(1,2,3)\n  total &lt;- 0\n  count &lt;- 0\n  for (value in data) {\n    total &lt;- total + value\n    count &lt;- count + 1\n  }\n  total/count\n\n[1] 2"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#arguments",
@@ -234,7 +235,7 @@
     "href": "files/Session-4-Functions/index.html#binary-operators-1",
     "title": "Writing functions in R",
     "section": "Binary operators",
-    "text": "Binary operators\n\n\n\nStandard function syntax:\n\nsum(c(1,2))\n\n[1] 3\n\n\n\n\n\nOperator syntax:\n\n1 + 2\n\n[1] 3\n\n\n\n\n\n\n\n\nMost binary operators come in %:\n\n\n\n\n3 %in% c(1,2,3)\n\n[1] TRUE\n\n\n\n\n\n\n\nCustom binary operators – let’s define an operator for “not in”:\n\n`%!in%` &lt;- function(x, y) !(x %in% y)\n\n\n\n\n3 %!in% c(1,2,3)\n\n[1] FALSE"
+    "text": "Binary operators\n\n\n\nStandard function syntax:\n\nsum(c(1,2))\n\n[1] 3\n\n\n\n\n\nOperator syntax:\n\n1 + 2\n\n[1] 3\n\n\n\n\n\n\n\nMost binary operators come in %:\n\n\n\n\n3 %in% c(1,2,3)\n\n[1] TRUE\n\n\n\n\n\n\nCustom binary operators – let’s define an operator for “not in”:\n\n`%!in%` &lt;- function(x, y) !(x %in% y)\n\n\n\n\n3 %!in% c(1,2,3)\n\n[1] FALSE"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#control-structures-if",
@@ -339,7 +340,7 @@
     "href": "files/Session-4-Functions/index.html#environment-1",
     "title": "Writing functions in R",
     "section": "Environment",
-    "text": "Environment\nIf we run the following function to assign to b the value of a\n\na_to_b &lt;- function(a) b &lt;- a\na_to_b(a = 1)\n\n\nand then look for b in the global environment\n\n\n\nb\n\nError in eval(expr, envir, enclos): object 'b' not found\n\n\nwe get an error because b only existed within the function environment.\n\n\n\nMore on environments: adv-r.hadley.nz/environments.html"
+    "text": "Environment\nIf we run the following function to assign to b the value of a\n\na_to_b &lt;- function(a) b &lt;- a\na_to_b(a = 1)\n\n\nand then look for b in the global environment\n\n\n\nb\n\nError: object 'b' not found\n\n\nwe get an error because b only existed within the function environment.\n\n\n\nMore on environments: adv-r.hadley.nz/environments.html"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#scoping",
@@ -367,7 +368,7 @@
     "href": "files/Session-4-Functions/index.html#trycatch",
     "title": "Writing functions in R",
     "section": "tryCatch",
-    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] -0.09196503 -0.09196503"
+    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError: chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] -0.0199666 -0.0199666"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#traceback",
@@ -423,14 +424,14 @@
     "href": "files/Session-4-Functions/index.html#measuring-performance",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.02    0.00    0.06"
+    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.05    0.00    0.06"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#measuring-performance-1",
     "href": "files/Session-4-Functions/index.html#measuring-performance-1",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr    min      lq     mean  median     uq    max neval\n  rnorm(10^4)  420.4  471.15  646.696  560.85  805.1 1524.8   100\n rlnorm(10^4) 1124.7 1182.05 1594.604 1454.85 2018.0 2476.0   100"
+    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min     lq     mean median     uq    max neval\n  rnorm(10^4) 474.6 493.85  505.511 496.65 500.35  678.8   100\n rlnorm(10^4) 954.6 977.50 1006.302 981.25 990.55 1339.9   100"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#profiling",
@@ -458,7 +459,7 @@
     "href": "files/Session-4-Functions/index.html#memory-allocation-1",
     "title": "Writing functions in R",
     "section": "Memory allocation",
-    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq   mean median uq    max neval\n is_six_1(data) 1.9 2.2 8.1990    2.6  3 4615.3  1000\n is_six_2(data) 1.2 1.6 5.8303    1.7  2 3371.0  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
+    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_1(data) 1400 1500 3762.2   1600 1600 2154700  1000\n is_six_2(data)  900 1000 3089.0   1000 1100 2054800  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
   },
   {
     "objectID": "files/Session-4-Functions/index.html#vectorisation",
@@ -472,14 +473,14 @@
     "href": "files/Session-4-Functions/index.html#vectorisation-1",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 1100 1300 4098.3   1300 1400 2652800  1000\n is_six_3(data)  200  300 1431.0    300  400 1054000  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
+    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr min   lq   mean median   uq    max neval\n is_six_2(data) 900 1100 1986.0   1200 2000 320700  1000\n is_six_3(data) 200  300 1319.3    400  600 843900  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
   },
   {
     "objectID": "files/Session-4-Functions/index.html#vectorisation-2",
     "href": "files/Session-4-Functions/index.html#vectorisation-2",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min     lq     mean median     uq     max neval\n apply(data, 2, sum) 172.8 235.45 378.2109 310.45 401.85 14354.4  1000\n       colSums(data)   8.8   9.70  14.4721  11.50  16.60   120.8  1000"
+    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min    lq     mean median    uq    max neval\n apply(data, 2, sum) 135.9 152.9 194.9638  165.9 178.9 6385.3  1000\n       colSums(data)   6.9   7.4   8.3717    8.2   8.6   87.4  1000"
   },
   {
     "objectID": "files/Session-4-Functions/index.html#rcpp",
@@ -703,7 +704,7 @@
     "href": "files/Session-4-Functions/functions.html#environment-1",
     "title": "Writing functions in R",
     "section": "Environment",
-    "text": "Environment\nIf we run the following function to assign to b the value of a\n\na_to_b &lt;- function(a) b &lt;- a\na_to_b(a = 1)\n\n\nand then look for b in the global environment\n\n\n\nb\n\nError in eval(expr, envir, enclos): object 'b' not found\n\n\nwe get an error because b only existed within the function environment.\n\n\n\nMore on environments: adv-r.hadley.nz/environments.html"
+    "text": "Environment\nIf we run the following function to assign to b the value of a\n\na_to_b &lt;- function(a) b &lt;- a\na_to_b(a = 1)\n\n\nand then look for b in the global environment\n\n\n\nb\n\nError: object 'b' not found\n\n\nwe get an error because b only existed within the function environment.\n\n\n\nMore on environments: adv-r.hadley.nz/environments.html"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#scoping",
@@ -731,7 +732,7 @@
     "href": "files/Session-4-Functions/functions.html#trycatch",
     "title": "Writing functions in R",
     "section": "tryCatch",
-    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError in eval(expr, envir, enclos): chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] 0.7173393 0.7173393"
+    "text": "tryCatch\nUse if you anticipate an error but want function to continue.\n\n\n\n\nLet’s try to generate data from a multivariate normal distribution:\n\nmvnfast::rmvn(1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\nError: chol(): decomposition failed\n\n\n\n\n\n\n\nmvnfast::rmvn is fast but fails for some problematic sigma values. In case it fails, we use MASS::mvrnorm instead:\n\nmy_rmvn &lt;- function(n, mu, sigma) {\n  tryCatch(mvnfast::rmvn(n, mu, sigma),\n           error = function(e) MASS::mvrnorm(n, mu, sigma))\n}\n\n\n\n\nmy_rmvn(n = 1, mu = c(0,0), sigma = matrix(rep(1,4), 2))\n\n[1] -0.8055861 -0.8055861"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#traceback",
@@ -787,14 +788,14 @@
     "href": "files/Session-4-Functions/functions.html#measuring-performance",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.02    0.00    0.06"
+    "text": "Measuring performance\nIf you have large data sets and complex functions, you may want to enhance their performance.\n\n\nTo check how long an operation takes, use system.time:\n\nsystem.time(rnorm(10^6))\n\n   user  system elapsed \n   0.05    0.00    0.03"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "href": "files/Session-4-Functions/functions.html#measuring-performance-1",
     "title": "Writing functions in R",
     "section": "Measuring performance",
-    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr    min     lq     mean  median      uq    max neval\n  rnorm(10^4)  442.2  472.5  673.620  620.40  818.40 1444.6   100\n rlnorm(10^4) 1144.2 1165.4 1646.834 1375.15 2010.25 3677.7   100"
+    "text": "Measuring performance\nThe microbenchmark package performs an operation many times, and measures the average time it takes. You can also compare different operations.\n\n\nWhat is faster, rnorm or rlnorm?\n\nmicrobenchmark::microbenchmark(rnorm(10^4),\n                               rlnorm(10^4))\n\nUnit: microseconds\n         expr   min     lq    mean median     uq    max neval\n  rnorm(10^4) 474.6 495.00 500.946 497.80 503.25  660.0   100\n rlnorm(10^4) 958.2 979.35 995.351 981.95 987.90 1388.6   100"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#profiling",
@@ -822,7 +823,7 @@
     "href": "files/Session-4-Functions/functions.html#memory-allocation-1",
     "title": "Writing functions in R",
     "section": "Memory allocation",
-    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: microseconds\n           expr min  lq   mean median  uq    max neval\n is_six_1(data) 1.8 1.9 5.1027    2.0 2.2 2709.5  1000\n is_six_2(data) 1.1 1.3 4.0414    1.3 1.5 2489.1  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
+    "text": "Memory allocation\nLet’s check which approach is faster:\n\nmicrobenchmark::microbenchmark(is_six_1(data),\n                               is_six_2(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_1(data) 1400 1500 3808.4   1500 1600 2235900  1000\n is_six_2(data)  900 1000 3083.8   1000 1100 2028700  1000\n\n\n\n\nis_six_2() is faster, as R doesn’t have to grow the res object in every iteration."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation",
@@ -836,14 +837,14 @@
     "href": "files/Session-4-Functions/functions.html#vectorisation-1",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr  min   lq   mean median   uq     max neval\n is_six_2(data) 1200 1300 5947.8   1400 1500 4468700  1000\n is_six_3(data)  200  300 1392.5    400  400  985400  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
+    "text": "Vectorisation\n\nmicrobenchmark::microbenchmark(is_six_2(data), \n                               is_six_3(data), times = 1000)\n\nUnit: nanoseconds\n           expr min  lq   mean median   uq    max neval\n is_six_2(data) 900 900 1018.2   1000 1000  10900  1000\n is_six_3(data) 200 200 1064.8    300  300 783000  1000\n\n\n\nThe vectorised version is_six_3() is much faster."
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#vectorisation-2",
     "href": "files/Session-4-Functions/functions.html#vectorisation-2",
     "title": "Writing functions in R",
     "section": "Vectorisation",
-    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min    lq     mean median     uq     max neval\n apply(data, 2, sum) 183.2 213.7 349.9197 282.55 350.65 16322.6  1000\n       colSums(data)   8.7   9.4  12.6065  10.10  13.50   193.3  1000"
+    "text": "Vectorisation\nVectorised matrix functions like rowSums(), colSums() or rowMeans()can lead to impressive speedups:\n\n\ndata &lt;- matrix(rnorm(10^4), nrow = 100)\n\nmicrobenchmark::microbenchmark(\n  apply(data, 2, sum),\n  colSums(data),\n  times = 1000)\n\nUnit: microseconds\n                expr   min     lq     mean median    uq    max neval\n apply(data, 2, sum) 136.5 163.15 220.8542 171.45 186.0 6669.7  1000\n       colSums(data)   7.0   7.50   8.8278   8.30   8.8   45.7  1000"
   },
   {
     "objectID": "files/Session-4-Functions/functions.html#rcpp",
@@ -898,7 +899,7 @@
     "section": "",
     "text": "The files are hosted on the StratoBayes.github.io Github repository. Download them by following the links below, which will lead you to the Github page where the file is hosted. To start the download, click on the downward facing arrow, or click on the three dots (...) in the top right corner, and select Download.",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -909,7 +910,7 @@
     "section": "Session 1 - Introduction to R and RStudio",
     "text": "Session 1 - Introduction to R and RStudio\nWorksheet for Session 1",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -920,7 +921,7 @@
     "section": "Session 2 - Handling data: import and manipulation",
     "text": "Session 2 - Handling data: import and manipulation\nWorksheet for Session 2",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -931,7 +932,7 @@
     "section": "Session 3 - Visualising and describing data",
     "text": "Session 3 - Visualising and describing data\nWorksheet for Session 3",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -942,7 +943,7 @@
     "section": "Session 4 - Writing functions in R",
     "text": "Session 4 - Writing functions in R\nWorksheet for Session 4 The worksheet is the file Session 4 Functions.html.",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -953,7 +954,7 @@
     "section": "Data and R scripts",
     "text": "Data and R scripts\nThe data and R scripts for the sessions are found here: Data and R scripts",
     "crumbs": [
-      "Workshop material",
+      "Workshop materials",
       "Day 1 - Introduction to R"
     ]
   },
@@ -964,7 +965,7 @@
     "section": "",
     "text": "This workshop is an outcome of the Leverhulme grant A fizzle or a bang: how fast was the Cambrian ‘explosion’?, awarded to Martin Smith.\n\n\n\n  \n    \n    \n    \n        Kilian Eichenseer\n        Durham University\n    \n\n\n\n  \n    \n    \n    \n        Martin Smith\n        Durham University\n        \n    \n\n\n\n\n\n\n  \n    \n    \n    \n        Matthias Sinnesael\n        Trinity College Dublin\n    \n\n\n\n  \n    \n    \n    \n        Andrew Millard\n        Durham University",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Organising Team"
     ]
   },
@@ -975,7 +976,7 @@
     "section": "",
     "text": "Sign-up\nSign-up for the workshop has now closed.\n\nWe have emailed payment details and confirmation messages to all registered participants.\nIn preparation for the workshop, it would be helpful to install a recent version of R (https://www.r-project.org/) and Rstudio (RStudio Desktop - Posit). Typing the following command into the R console will install the packages necessary to run StratoBayes on day 2:\ninstall.packages(c(\"cli\", \"coda\", \"doParallel\", \"EnvStats\", \"fda\",\n                   \"foreach\", \"dbscan\", \"mcmcse\", \"msm\", \"mvnfast\",\n                   \"protoclust\", \"Rcpp\", \"Rdpack\", \"Rfast\"))",
     "crumbs": [
-      "Overview",
+      "Workshop overview",
       "Sign-up"
     ]
   }

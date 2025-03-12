@@ -10,13 +10,19 @@ website:
     search: true
     logo: "images/logo-3.png"
     contents:
-      - section: "Overview"
+      - text: "Home"
+        href: https://stratobayes.github.io/
+      - text: "Software"
+        href: https://stratobayes.github.io/software
+      - text: "Website"
+        href: https://stratobayes.com
+      - section: "Workshop overview"
         contents:
           - index.qmd
           - sign-up.qmd
           - schedule.qmd
           - organising-team.qmd
-      - section: "Workshop material"
+      - section: "Workshop materials"
         contents:
           - introduction-to-R.qmd
           - StratoBayes.qmd
@@ -25,7 +31,7 @@ website:
         contents:
           - getting-here.qmd
           - food-and-drinks.qmd
-      - leisure.qmd
+          - leisure.qmd
       # - section: "Content"
         # contents:
         #   - day1.qmd
